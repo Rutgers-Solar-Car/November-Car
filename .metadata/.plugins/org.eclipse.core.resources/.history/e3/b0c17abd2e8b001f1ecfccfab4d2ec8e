@@ -1,0 +1,16 @@
+#include "sys_can_receive.h"
+#include "main.h"
+
+static CAN_HandleTypeDef* rx_hcan;
+static board_param_t** rx_params;
+uint16_t num_params;
+
+void can_rx_init(CAN_HandleTypeDef* hcan, board_param_t* param, uint16_t num_params) {
+	rx_hcan = hcan;
+	int index = 0;
+	for (int i = 0; i < num_params; i++) {
+		if (param[i].type == TO_RECEIVE) {
+
+		}
+	}
+}

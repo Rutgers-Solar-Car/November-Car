@@ -24,6 +24,8 @@
 #define CAN_ID 0x103
 #include "can.h"
 #include "sys_can_transmit.h"
+#include "sys_can_receive.h"
+#include "hvbps_params.h"
 
 /* USER CODE END Includes */
 
@@ -49,6 +51,10 @@ TIM_HandleTypeDef htim2;
 
 /* USER CODE BEGIN PV */
 
+board_param_t* hvbps_params;
+
+uint32_t* TxMailbox;
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -63,7 +69,9 @@ static void MX_TIM2_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan) {
+	can_receive_message();
+}
 /* USER CODE END 0 */
 
 /**
@@ -74,6 +82,8 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
+
+  hvbps_params = get_params();
 
   /* USER CODE END 1 */
 
@@ -101,7 +111,9 @@ int main(void)
   MX_CAN1_Init();
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
-
+  HAL_CAN_Start(&hcan1);
+  can_tx_init(&hcan1, TxMailbox, hvbps_params, NUM_PARAMS);
+  HAL_CAN_ActivateNotification(&hcan1, CAN_IT_RX_FIFO0_MSG_PENDING);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -109,7 +121,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-
+	  can_incremental_update();
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -193,7 +205,20 @@ static void MX_CAN1_Init(void)
     Error_Handler();
   }
   /* USER CODE BEGIN CAN1_Init 2 */
+  CAN_FilterTypeDef canfilterconfig;
 
+  canfilterconfig.FilterActivation = CAN_FILTER_ENABLE;
+  canfilterconfig.FilterBank = 18;  // which filter bank to use from the assigned ones
+  canfilterconfig.FilterFIFOAssignment = CAN_FILTER_FIFO0;
+  canfilterconfig.FilterIdHigh = 0x000<<5; // 0x001
+  canfilterconfig.FilterIdLow = 0;
+  canfilterconfig.FilterMaskIdHigh = 0x000<<5; // 0x001
+  canfilterconfig.FilterMaskIdLow = 0x0000;
+  canfilterconfig.FilterMode = CAN_FILTERMODE_IDMASK;
+  canfilterconfig.FilterScale = CAN_FILTERSCALE_32BIT;
+  canfilterconfig.SlaveStartFilterBank = 20;  // how many filters to assign to the CAN1 (master can)
+
+  HAL_CAN_ConfigFilter(&hcan1, &canfilterconfig);
   /* USER CODE END CAN1_Init 2 */
 
 }

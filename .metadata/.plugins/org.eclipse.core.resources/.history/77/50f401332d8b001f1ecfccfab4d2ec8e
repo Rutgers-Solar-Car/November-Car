@@ -1,0 +1,6 @@
+#ifndef SYS_CAN_RECEIVE
+#define SYS_CAN_RECEIVE
+
+
+
+#endif

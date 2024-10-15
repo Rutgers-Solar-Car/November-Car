@@ -15,11 +15,12 @@ typedef struct {
 	uint8_t type;
 	bool to_send;
 	uint32_t timestamp;
+	bool stale;
 } board_param_t;
 
 enum {
 	TO_SEND = 0,
-	TO_RECIEVE
+	TO_RECEIVE
 };
 
 can_data_t convert_message(board_param_t* param);

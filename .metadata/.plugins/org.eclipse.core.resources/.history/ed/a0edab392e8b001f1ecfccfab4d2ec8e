@@ -1,0 +1,8 @@
+#include "sys_can_receive.h"
+#include "main.h"
+
+static CAN_HandleTypeDef* hcan;
+static board_param_t** rx_params;
+uint16_t num_params;
+
+void can_rx_init(CAN_HandleTypeDef* hcan, board_param_t* param, uint16_t num_params);
