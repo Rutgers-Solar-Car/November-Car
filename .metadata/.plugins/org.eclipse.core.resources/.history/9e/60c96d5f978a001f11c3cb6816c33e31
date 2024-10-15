@@ -1,0 +1,58 @@
+#include "sys_can_transmit.h"
+#include "main.h"
+
+#ifndef CAN_ID
+#define CAN_ID 0
+#endif
+
+const int num_tx_params = 2;
+tx_param_t current_tx_params[2];
+const uint32_t std_id = 0x103;
+const uint32_t std_DLC = 8;
+const uint32_t std_IDE = CAN_ID_STD;
+const uint32_t std_RTR = CAN_RTR_DATA;
+
+static uint32_t* TxMailbox;
+static CAN_HandleTypeDef* hcan1;
+
+static HAL_StatusTypeDef send_can_message(tx_param_t* param) {
+	return HAL_CAN_AddTxMessage(hcan1, &param->tx_header, param->tx_data.data, TxMailbox);
+}
+
+void can_tx_init(CAN_HandleTypeDef* hcan, uint32_t* mailbox) {
+
+	hcan1 = hcan;
+	TxMailbox = mailbox;
+
+	// code here to be auto generated but for now it will not be
+	for (int i = 0; i < num_tx_params; i++) {
+		tx_param_t* current_param = &current_tx_params[i];
+
+		current_param->tx_header.IDE = std_IDE;
+		current_param->tx_header.DLC = std_DLC;
+		current_param->tx_header.RTR = std_RTR;
+		current_param->tx_header.StdId = std_id;
+		current_param->tx_header.TransmitGlobalTime = ENABLE;
+		current_param->tx_data.ID = i + 1;
+		current_param->tx_data.bval = false;
+		current_param->to_send = true;
+
+	}
+
+}
+
+void can_incremental_update(tx_param_t* tx_params) {
+	for (int i = 0; i < num_tx_params; i++) {
+		tx_param_t* current_param = &current_tx_params[i];
+		send_can_message(current_param);
+	}
+}
+
+void can_tx_refresh() {
+	for (int i = 0; i < num_tx_params; i++) {
+		if (!current_tx_params[i].to_send) continue;
+		if (send_can_message(&current_tx_params[i]) == HAL_OK) {
+			current_tx_params[i].to_send = false;
+		}
+	}
+}

@@ -21,6 +21,9 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#define CAN_ID 0x103
+#include "can.h"
+#include "sys_can_transmit.h"
 
 /* USER CODE END Includes */
 

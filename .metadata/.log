@@ -312,3 +312,18 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY org.eclipse.cdt.core 1 0 2024-10-14 21:39:03.239
 !MESSAGE Indexed 'Motor Interface' (24 sources, 142 headers) in 2.93 sec: 14,585 declarations; 74,468 references; 6 unresolved inclusions; 82 syntax errors; 1,790 unresolved names (2%)
+!SESSION 2024-10-15 13:03:44.622 -----------------------------------------------
+eclipse.buildId=Version 1.16.1
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-10-15 13:04:36.644
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-10-15 13:04:36.658
+!MESSAGE Log4j2 initialized with config file C:\Users\corre\coding\November-Car\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-10-15 13:04:46.740
+!MESSAGE Started RMI Server, listening on port 41337

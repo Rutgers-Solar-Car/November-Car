@@ -1,0 +1,17 @@
+#ifndef HVBPS_PARAMS_H
+#define HVBPS_PARAMS_H
+
+///
+/// THIS FILE IS NOT TO BE ADJUSTED BY HAND
+/// if it can be avoided
+///
+
+#include <stdint.h>
+#include "board_params.h"
+#define NUM_PARAMS 10
+
+
+board_param_t[10] load_board_parameters();
+
+
+#endif
