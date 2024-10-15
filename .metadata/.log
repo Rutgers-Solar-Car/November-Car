@@ -288,3 +288,27 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-10-14 21:23:58.270
 !MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2024-10-14 21:32:45.043 -----------------------------------------------
+eclipse.buildId=Version 1.16.1
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-10-14 21:33:03.845
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-10-14 21:33:03.847
+!MESSAGE Log4j2 initialized with config file C:\Users\corre\coding\November-Car\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-10-14 21:33:11.739
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-10-14 21:37:19.034
+!MESSAGE Indexed 'Driver Controls' (23 sources, 110 headers) in 5.71 sec: 11,721 declarations; 67,476 references; 6 unresolved inclusions; 1,044 syntax errors; 1,956 unresolved names (2.4%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-10-14 21:38:42.517
+!MESSAGE Indexed 'Dashboard' (23 sources, 110 headers) in 2.91 sec: 11,721 declarations; 67,441 references; 6 unresolved inclusions; 1,044 syntax errors; 1,952 unresolved names (2.4%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-10-14 21:39:03.239
+!MESSAGE Indexed 'Motor Interface' (24 sources, 142 headers) in 2.93 sec: 14,585 declarations; 74,468 references; 6 unresolved inclusions; 82 syntax errors; 1,790 unresolved names (2%)

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Dashboard/Driver Controls.ioc&apos; to &apos;Dashboard.ioc&apos;" description="Rename resource &apos;Driver Controls.ioc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Driver Controls.ioc" name="Dashboard.ioc" stamp="1728956406232" updateReferences="true"/>
+</session>
