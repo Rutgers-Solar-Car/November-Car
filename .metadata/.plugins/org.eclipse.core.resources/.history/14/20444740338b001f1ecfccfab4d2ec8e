@@ -123,7 +123,7 @@ int main(void)
   {
     /* USER CODE END WHILE */
 	  can_incremental_update();
-	  check_staleness(&hvbps_params, NUM_PARAMS);
+	  check_stale(&hvbps_params, NUM_PARAMS);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */

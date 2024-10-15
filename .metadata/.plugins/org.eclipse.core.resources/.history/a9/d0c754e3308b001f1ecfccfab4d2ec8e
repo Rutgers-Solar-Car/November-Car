@@ -113,7 +113,6 @@ int main(void)
   /* USER CODE BEGIN 2 */
   HAL_CAN_Start(&hcan1);
   can_tx_init(&hcan1, TxMailbox, hvbps_params, NUM_PARAMS);
-  can_rx_init(&hcan1, hvbps_params, NUM_PARAMS);
   HAL_CAN_ActivateNotification(&hcan1, CAN_IT_RX_FIFO0_MSG_PENDING);
   /* USER CODE END 2 */
 
@@ -123,7 +122,6 @@ int main(void)
   {
     /* USER CODE END WHILE */
 	  can_incremental_update();
-	  check_staleness(&hvbps_params, NUM_PARAMS);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */

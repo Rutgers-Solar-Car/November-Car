@@ -5,6 +5,10 @@
 #include "stm32f7xx_hal.h"
 #include "board_params.h"
 
+#ifndef CAN_ID
+#define CAN_ID 0x000
+#endif
+
 /*
  * inits transmit params to be empty
  */

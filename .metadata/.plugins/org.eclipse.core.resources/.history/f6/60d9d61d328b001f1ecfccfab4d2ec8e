@@ -5,6 +5,10 @@
 #include <stdbool.h>
 #include "can.h"
 
+#ifndef STALE_TIME
+#define STALE_TIME 2000 //ms
+#endif
+
 typedef struct {
 	uint16_t ID;
 	union {
@@ -15,7 +19,6 @@ typedef struct {
 	uint8_t type;
 	bool to_send;
 	uint32_t timestamp;
-	bool check_stale;
 	bool stale;
 } board_param_t;
 
@@ -25,7 +28,5 @@ enum {
 };
 
 can_data_t convert_message(board_param_t* param);
-
-void check_staleness(board_param_t** params, uint16_t num_params);
 
 #endif

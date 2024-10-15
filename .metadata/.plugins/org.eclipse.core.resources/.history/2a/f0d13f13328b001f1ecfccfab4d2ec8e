@@ -1,8 +1,6 @@
 #include "sys_can_transmit.h"
 #include "main.h"
 
-#define CAN_ID 0x103
-
 static int num_tx_params;
 static board_param_t** tx_params;
 static CAN_TxHeaderTypeDef std_header = {

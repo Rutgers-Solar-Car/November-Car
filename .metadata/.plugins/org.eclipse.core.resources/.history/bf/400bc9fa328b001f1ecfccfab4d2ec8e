@@ -15,7 +15,6 @@ typedef struct {
 	uint8_t type;
 	bool to_send;
 	uint32_t timestamp;
-	bool check_stale;
 	bool stale;
 } board_param_t;
 
