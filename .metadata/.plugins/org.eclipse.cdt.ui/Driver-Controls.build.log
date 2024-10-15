@@ -1,0 +1,10 @@
+16:36:24 **** Incremental Build of configuration Debug for project Driver-Controls ****
+make -j22 all 
+arm-none-eabi-size  Driver-Controls.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Driver-Controls.elf
+Finished building: default.size.stdout
+ 
+
+16:36:24 Build Finished. 0 errors, 0 warnings. (took 319ms)
+

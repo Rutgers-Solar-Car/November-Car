@@ -1,0 +1,10 @@
+16:36:25 **** Incremental Build of configuration Debug for project Motor-Interface ****
+make -j22 all 
+arm-none-eabi-size  Motor-Interface.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Motor-Interface.elf
+Finished building: default.size.stdout
+ 
+
+16:36:25 Build Finished. 0 errors, 0 warnings. (took 326ms)
+
