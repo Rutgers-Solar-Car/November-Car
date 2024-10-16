@@ -1,5 +1,7 @@
 #include "sys_can_transmit.h"
 #include "main.h"
+#include <stdlib.h>
+#include <stdbool.h>
 
 #define CAN_ID 0x103
 
@@ -26,11 +28,18 @@ void can_tx_init(CAN_HandleTypeDef* hcan, uint32_t* mailbox, board_param_t* para
 	int index = 0;
 	for (int i = 0; i < num_params; i++) {
 		if (params[i].type == TO_SEND) {
-			tx_params[index] = &params[i];
 			index++;
 		}
 	}
 	num_tx_params = index;
+	index = 0;
+	tx_params = malloc(sizeof(board_param_t*) * num_tx_params);
+	for (int i = 0; i < num_params; i++) {
+		if (params[i].type == TO_SEND) {
+			tx_params[index] = &params[i];
+			index++;
+		}
+	}
 	ready = true;
 }
 

@@ -1,4 +1,4 @@
-../Core/Src/sys_can_transmit.c:19:26:send_can_message	40	static
-../Core/Src/sys_can_transmit.c:23:6:can_tx_init	32	static
-../Core/Src/sys_can_transmit.c:37:6:can_incremental_update	16	static
-../Core/Src/sys_can_transmit.c:47:6:can_tx_refresh	16	static
+../Core/Src/sys_can_transmit.c:21:26:send_can_message	40	static
+../Core/Src/sys_can_transmit.c:25:6:can_tx_init	40	static
+../Core/Src/sys_can_transmit.c:46:6:can_incremental_update	16	static
+../Core/Src/sys_can_transmit.c:56:6:can_tx_refresh	16	static

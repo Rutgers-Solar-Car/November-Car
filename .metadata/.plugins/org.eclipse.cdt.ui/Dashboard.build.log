@@ -1,4 +1,4 @@
-16:36:23 **** Incremental Build of configuration Debug for project Dashboard ****
+11:51:13 **** Incremental Build of configuration Debug for project Dashboard ****
 make -j22 all 
 arm-none-eabi-size  Dashboard.elf 
    text	   data	    bss	    dec	    hex	filename
@@ -6,5 +6,5 @@ arm-none-eabi-size  Dashboard.elf
 Finished building: default.size.stdout
  
 
-16:36:23 Build Finished. 0 errors, 0 warnings. (took 333ms)
+11:51:13 Build Finished. 0 errors, 0 warnings. (took 336ms)
 
