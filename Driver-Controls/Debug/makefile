@@ -60,8 +60,8 @@ all: main-build
 main-build: Driver-Controls.elf secondary-outputs
 
 # Tool invocations
-Driver-Controls.elf Driver-Controls.map: $(OBJS) $(USER_OBJS) C:\Users\corre\coding\November-Car\Driver-Controls\STM32F767ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "Driver-Controls.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\corre\coding\November-Car\Driver-Controls\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Driver-Controls.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Driver-Controls.elf Driver-Controls.map: $(OBJS) $(USER_OBJS) C:\Users\corre\coding\November-Car-2\Driver-Controls\STM32F767ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "Driver-Controls.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\corre\coding\November-Car-2\Driver-Controls\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Driver-Controls.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

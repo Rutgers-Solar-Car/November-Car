@@ -882,3 +882,1409 @@ arm-none-eabi-size  Motor-Interface.elf
   13936	     76	   1764	  15776	   3da0	Motor-Interface.elf
 Finished building: default.size.stdout
  
+21:41:37 **** Build of configuration Debug for project Dashboard ****
+make -j22 all 
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_can.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_can.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_can.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_can.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.o"
+arm-none-eabi-gcc -mcpu=cortex-m7 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f767zitx.d" -MT"Core/Startup/startup_stm32f767zitx.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32f767zitx.o" "../Core/Startup/startup_stm32f767zitx.s"
+arm-none-eabi-gcc "../Core/Src/board_params.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/board_params.d" -MT"Core/Src/board_params.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/board_params.o"
+arm-none-eabi-gcc "../Core/Src/dashboard_params.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/dashboard_params.d" -MT"Core/Src/dashboard_params.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/dashboard_params.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f7xx_hal_msp.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f7xx_hal_msp.d" -MT"Core/Src/stm32f7xx_hal_msp.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f7xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f7xx_it.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f7xx_it.d" -MT"Core/Src/stm32f7xx_it.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f7xx_it.o"
+arm-none-eabi-gcc "../Core/Src/sys_can_receive.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_receive.d" -MT"Core/Src/sys_can_receive.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_receive.o"
+arm-none-eabi-gcc "../Core/Src/sys_can_transmit.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_transmit.d" -MT"Core/Src/sys_can_transmit.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_transmit.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f7xx.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f7xx.d" -MT"Core/Src/system_stm32f7xx.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f7xx.o"
+arm-none-eabi-gcc -o "Dashboard.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\corre\coding\November-Car-2\Dashboard\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Dashboard.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Dashboard.elf
+ 
+arm-none-eabi-size  Dashboard.elf 
+arm-none-eabi-objdump -h -S Dashboard.elf  > "Dashboard.list"
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Dashboard.elf
+Finished building: default.size.stdout
+ 
+Finished building: Dashboard.list
+ 
+21:41:42 **** Build of configuration Debug for project Driver-Controls ****
+make -j22 all 
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_can.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_can.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_can.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_can.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.o"
+arm-none-eabi-gcc -mcpu=cortex-m7 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f767zitx.d" -MT"Core/Startup/startup_stm32f767zitx.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32f767zitx.o" "../Core/Startup/startup_stm32f767zitx.s"
+arm-none-eabi-gcc "../Core/Src/board_params.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/board_params.d" -MT"Core/Src/board_params.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/board_params.o"
+arm-none-eabi-gcc "../Core/Src/driver_controls_params.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/driver_controls_params.d" -MT"Core/Src/driver_controls_params.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/driver_controls_params.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f7xx_hal_msp.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f7xx_hal_msp.d" -MT"Core/Src/stm32f7xx_hal_msp.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f7xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f7xx_it.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f7xx_it.d" -MT"Core/Src/stm32f7xx_it.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f7xx_it.o"
+arm-none-eabi-gcc "../Core/Src/sys_can_receive.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_receive.d" -MT"Core/Src/sys_can_receive.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_receive.o"
+arm-none-eabi-gcc "../Core/Src/sys_can_transmit.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_transmit.d" -MT"Core/Src/sys_can_transmit.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_transmit.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f7xx.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f7xx.d" -MT"Core/Src/system_stm32f7xx.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f7xx.o"
+arm-none-eabi-gcc -o "Driver-Controls.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\corre\coding\November-Car-2\Driver-Controls\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Driver-Controls.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Driver-Controls.elf
+ 
+arm-none-eabi-size  Driver-Controls.elf 
+arm-none-eabi-objdump -h -S Driver-Controls.elf  > "Driver-Controls.list"
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Driver-Controls.elf
+Finished building: default.size.stdout
+ 
+Finished building: Driver-Controls.list
+ 
+21:41:44 **** Build of configuration Debug for project HVBPS ****
+make -j22 all 
+arm-none-eabi-gcc "../Core/Src/sys_can_receive.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_receive.d" -MT"Core/Src/sys_can_receive.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_receive.o"
+../Core/Src/sys_can_receive.c: In function 'can_receive_message':
+../Core/Src/sys_can_receive.c:22:21: error: 'rx_params' undeclared (first use in this function); did you mean 'params'?
+   22 |                 if (rx_params[i]->ID != data.ID) continue;
+      |                     ^~~~~~~~~
+      |                     params
+../Core/Src/sys_can_receive.c:22:21: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/sys_can_receive.c:23:30: error: expected identifier or '(' before '&' token
+   23 |                 board_param_t& param = params[i];
+      |                              ^
+../Core/Src/sys_can_receive.c:24:17: error: 'param' undeclared (first use in this function); did you mean 'params'?
+   24 |                 param.ival = data.ival;
+      |                 ^~~~~
+      |                 params
+make: *** [Core/Src/subdir.mk:46: Core/Src/sys_can_receive.o] Error 1
+"make -j22 all" terminated with exit code 2. Build might be incomplete.
+21:41:46 **** Build of configuration Debug for project Motor-Interface ****
+make -j22 all 
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_can.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_can.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_can.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_can.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.o"
+arm-none-eabi-gcc -mcpu=cortex-m7 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f767zitx.d" -MT"Core/Startup/startup_stm32f767zitx.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32f767zitx.o" "../Core/Startup/startup_stm32f767zitx.s"
+arm-none-eabi-gcc "../Core/Src/board_params.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/board_params.d" -MT"Core/Src/board_params.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/board_params.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/motor_interface_params.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/motor_interface_params.d" -MT"Core/Src/motor_interface_params.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/motor_interface_params.o"
+arm-none-eabi-gcc "../Core/Src/stm32f7xx_hal_msp.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f7xx_hal_msp.d" -MT"Core/Src/stm32f7xx_hal_msp.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f7xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f7xx_it.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f7xx_it.d" -MT"Core/Src/stm32f7xx_it.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f7xx_it.o"
+arm-none-eabi-gcc "../Core/Src/sys_can_receive.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_receive.d" -MT"Core/Src/sys_can_receive.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_receive.o"
+arm-none-eabi-gcc "../Core/Src/sys_can_transmit.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_transmit.d" -MT"Core/Src/sys_can_transmit.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_transmit.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f7xx.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f7xx.d" -MT"Core/Src/system_stm32f7xx.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f7xx.o"
+arm-none-eabi-gcc -o "Motor-Interface.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\corre\coding\November-Car-2\Motor-Interface\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Motor-Interface.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Motor-Interface.elf
+ 
+arm-none-eabi-size  Motor-Interface.elf 
+arm-none-eabi-objdump -h -S Motor-Interface.elf  > "Motor-Interface.list"
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Motor-Interface.elf
+Finished building: default.size.stdout
+ 
+Finished building: Motor-Interface.list
+ 
+21:42:23 **** Incremental Build of configuration Debug for project Dashboard ****
+make -j22 all 
+arm-none-eabi-size  Dashboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Dashboard.elf
+Finished building: default.size.stdout
+ 
+21:42:23 **** Incremental Build of configuration Debug for project Driver-Controls ****
+make -j22 all 
+arm-none-eabi-size  Driver-Controls.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Driver-Controls.elf
+Finished building: default.size.stdout
+ 
+21:42:24 **** Incremental Build of configuration Debug for project HVBPS ****
+make -j22 all 
+arm-none-eabi-gcc "../Core/Src/sys_can_receive.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_receive.d" -MT"Core/Src/sys_can_receive.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_receive.o"
+../Core/Src/sys_can_receive.c: In function 'can_receive_message':
+../Core/Src/sys_can_receive.c:22:21: error: 'rx_params' undeclared (first use in this function); did you mean 'params'?
+   22 |                 if (rx_params[i].ID != data.ID) continue;
+      |                     ^~~~~~~~~
+      |                     params
+../Core/Src/sys_can_receive.c:22:21: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:46: Core/Src/sys_can_receive.o] Error 1
+"make -j22 all" terminated with exit code 2. Build might be incomplete.
+21:42:25 **** Incremental Build of configuration Debug for project Motor-Interface ****
+make -j22 all 
+arm-none-eabi-size  Motor-Interface.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Motor-Interface.elf
+Finished building: default.size.stdout
+ 
+21:42:36 **** Incremental Build of configuration Debug for project Dashboard ****
+make -j22 all 
+arm-none-eabi-size  Dashboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Dashboard.elf
+Finished building: default.size.stdout
+ 
+21:42:37 **** Incremental Build of configuration Debug for project Driver-Controls ****
+make -j22 all 
+arm-none-eabi-size  Driver-Controls.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Driver-Controls.elf
+Finished building: default.size.stdout
+ 
+21:42:37 **** Incremental Build of configuration Debug for project HVBPS ****
+make -j22 all 
+arm-none-eabi-gcc "../Core/Src/sys_can_receive.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_receive.d" -MT"Core/Src/sys_can_receive.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_receive.o"
+../Core/Src/sys_can_receive.c: In function 'can_receive_message':
+../Core/Src/sys_can_receive.c:22:21: error: 'rx_params' undeclared (first use in this function); did you mean 'params'?
+   22 |                 if (rx_params[i].ID != data.ID) continue;
+      |                     ^~~~~~~~~
+      |                     params
+../Core/Src/sys_can_receive.c:22:21: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:46: Core/Src/sys_can_receive.o] Error 1
+"make -j22 all" terminated with exit code 2. Build might be incomplete.
+21:42:38 **** Incremental Build of configuration Debug for project Motor-Interface ****
+make -j22 all 
+arm-none-eabi-size  Motor-Interface.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Motor-Interface.elf
+Finished building: default.size.stdout
+ 
+21:42:47 **** Incremental Build of configuration Debug for project Dashboard ****
+make -j22 all 
+arm-none-eabi-size  Dashboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Dashboard.elf
+Finished building: default.size.stdout
+ 
+21:42:47 **** Incremental Build of configuration Debug for project Driver-Controls ****
+make -j22 all 
+arm-none-eabi-size  Driver-Controls.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Driver-Controls.elf
+Finished building: default.size.stdout
+ 
+21:42:48 **** Incremental Build of configuration Debug for project HVBPS ****
+make -j22 all 
+arm-none-eabi-gcc "../Core/Src/sys_can_receive.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_receive.d" -MT"Core/Src/sys_can_receive.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_receive.o"
+arm-none-eabi-gcc -o "HVBPS.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\corre\coding\November-Car\HVBPS\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="HVBPS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: HVBPS.elf
+ 
+arm-none-eabi-size  HVBPS.elf 
+arm-none-eabi-objdump -h -S HVBPS.elf  > "HVBPS.list"
+   text	   data	    bss	    dec	    hex	filename
+  14484	    156	   2092	  16732	   415c	HVBPS.elf
+Finished building: default.size.stdout
+ 
+Finished building: HVBPS.list
+ 
+21:42:49 **** Incremental Build of configuration Debug for project Motor-Interface ****
+make -j22 all 
+arm-none-eabi-size  Motor-Interface.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Motor-Interface.elf
+Finished building: default.size.stdout
+ 
+21:43:22 **** Incremental Build of configuration Debug for project Dashboard ****
+make -j22 all 
+arm-none-eabi-size  Dashboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Dashboard.elf
+Finished building: default.size.stdout
+ 
+21:43:23 **** Incremental Build of configuration Debug for project Driver-Controls ****
+make -j22 all 
+arm-none-eabi-size  Driver-Controls.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Driver-Controls.elf
+Finished building: default.size.stdout
+ 
+21:43:23 **** Incremental Build of configuration Debug for project HVBPS ****
+make -j22 all 
+arm-none-eabi-gcc "../Core/Src/sys_can_receive.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_receive.d" -MT"Core/Src/sys_can_receive.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_receive.o"
+arm-none-eabi-gcc -o "HVBPS.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\corre\coding\November-Car\HVBPS\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="HVBPS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: HVBPS.elf
+ 
+arm-none-eabi-size  HVBPS.elf 
+arm-none-eabi-objdump -h -S HVBPS.elf  > "HVBPS.list"
+   text	   data	    bss	    dec	    hex	filename
+  14508	    156	   2092	  16756	   4174	HVBPS.elf
+Finished building: default.size.stdout
+ 
+Finished building: HVBPS.list
+ 
+21:43:25 **** Incremental Build of configuration Debug for project Motor-Interface ****
+make -j22 all 
+arm-none-eabi-size  Motor-Interface.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Motor-Interface.elf
+Finished building: default.size.stdout
+ 
+21:43:30 **** Incremental Build of configuration Debug for project Dashboard ****
+make -j22 all 
+arm-none-eabi-size  Dashboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Dashboard.elf
+Finished building: default.size.stdout
+ 
+21:43:31 **** Incremental Build of configuration Debug for project Driver-Controls ****
+make -j22 all 
+arm-none-eabi-size  Driver-Controls.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Driver-Controls.elf
+Finished building: default.size.stdout
+ 
+21:43:31 **** Incremental Build of configuration Debug for project HVBPS ****
+make -j22 all 
+arm-none-eabi-gcc "../Core/Src/sys_can_receive.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_receive.d" -MT"Core/Src/sys_can_receive.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_receive.o"
+arm-none-eabi-gcc -o "HVBPS.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\corre\coding\November-Car\HVBPS\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="HVBPS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: HVBPS.elf
+ 
+arm-none-eabi-size  HVBPS.elf 
+arm-none-eabi-objdump -h -S HVBPS.elf  > "HVBPS.list"
+   text	   data	    bss	    dec	    hex	filename
+  14508	    156	   2092	  16756	   4174	HVBPS.elf
+Finished building: default.size.stdout
+ 
+Finished building: HVBPS.list
+ 
+21:43:33 **** Incremental Build of configuration Debug for project Motor-Interface ****
+make -j22 all 
+arm-none-eabi-size  Motor-Interface.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Motor-Interface.elf
+Finished building: default.size.stdout
+ 
+22:05:58 **** Incremental Build of configuration Debug for project Dashboard ****
+make -j22 all 
+arm-none-eabi-size  Dashboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Dashboard.elf
+Finished building: default.size.stdout
+ 
+22:05:58 **** Incremental Build of configuration Debug for project Driver-Controls ****
+make -j22 all 
+arm-none-eabi-size  Driver-Controls.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Driver-Controls.elf
+Finished building: default.size.stdout
+ 
+22:05:59 **** Incremental Build of configuration Debug for project HVBPS ****
+make -j22 all 
+arm-none-eabi-gcc "../Core/Src/hvbps_params.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/hvbps_params.d" -MT"Core/Src/hvbps_params.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/hvbps_params.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/sys_can_receive.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_receive.d" -MT"Core/Src/sys_can_receive.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_receive.o"
+In file included from ../Core/Src/main.c:20:
+../Core/Src/main.c: In function 'main':
+../Core/Inc/board_specific_params.h:11:20: warning: passing argument 2 of 'can_rx_init' makes pointer from integer without a cast [-Wint-conversion]
+   11 | #define NUM_PARAMS 2
+      |                    ^
+      |                    |
+      |                    int
+../Core/Src/main.c:115:23: note: in expansion of macro 'NUM_PARAMS'
+  115 |   can_rx_init(&hcan1, NUM_PARAMS);
+      |                       ^~~~~~~~~~
+In file included from ../Core/Src/main.c:27:
+../Core/Inc/sys_can_receive.h:12:58: note: expected 'board_param_t *' but argument is of type 'int'
+   12 | void can_rx_init(CAN_HandleTypeDef* hcan, board_param_t* params, uint16_t num_params);
+      |                                           ~~~~~~~~~~~~~~~^~~~~~
+../Core/Src/main.c:115:3: error: too few arguments to function 'can_rx_init'
+  115 |   can_rx_init(&hcan1, NUM_PARAMS);
+      |   ^~~~~~~~~~~
+../Core/Inc/sys_can_receive.h:12:6: note: declared here
+   12 | void can_rx_init(CAN_HandleTypeDef* hcan, board_param_t* params, uint16_t num_params);
+      |      ^~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:46: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/sys_can_receive.c:12:6: error: conflicting types for 'can_rx_init'; have 'void(CAN_HandleTypeDef *, board_param_t *)'
+   12 | void can_rx_init(CAN_HandleTypeDef* hcan, board_param_t* param) {
+      |      ^~~~~~~~~~~
+In file included from ../Core/Src/sys_can_receive.c:2:
+../Core/Inc/sys_can_receive.h:12:6: note: previous declaration of 'can_rx_init' with type 'void(CAN_HandleTypeDef *, board_param_t *, uint16_t)' {aka 'void(CAN_HandleTypeDef *, board_param_t *, short unsigned int)'}
+   12 | void can_rx_init(CAN_HandleTypeDef* hcan, board_param_t* params, uint16_t num_params);
+      |      ^~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:46: Core/Src/sys_can_receive.o] Error 1
+"make -j22 all" terminated with exit code 2. Build might be incomplete.
+22:06:00 **** Incremental Build of configuration Debug for project Motor-Interface ****
+make -j22 all 
+arm-none-eabi-size  Motor-Interface.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Motor-Interface.elf
+Finished building: default.size.stdout
+ 
+22:06:08 **** Incremental Build of configuration Debug for project Dashboard ****
+make -j22 all 
+arm-none-eabi-size  Dashboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Dashboard.elf
+Finished building: default.size.stdout
+ 
+22:06:08 **** Incremental Build of configuration Debug for project Driver-Controls ****
+make -j22 all 
+arm-none-eabi-size  Driver-Controls.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Driver-Controls.elf
+Finished building: default.size.stdout
+ 
+22:06:09 **** Incremental Build of configuration Debug for project HVBPS ****
+make -j22 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/sys_can_receive.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_receive.d" -MT"Core/Src/sys_can_receive.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_receive.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:115:3: error: too few arguments to function 'can_rx_init'
+  115 |   can_rx_init(&hcan1);
+      |   ^~~~~~~~~~~
+In file included from ../Core/Src/main.c:27:
+../Core/Inc/sys_can_receive.h:12:6: note: declared here
+   12 | void can_rx_init(CAN_HandleTypeDef* hcan, board_param_t* params, uint16_t num_params);
+      |      ^~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:46: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/sys_can_receive.c:12:6: error: conflicting types for 'can_rx_init'; have 'void(CAN_HandleTypeDef *, board_param_t *)'
+   12 | void can_rx_init(CAN_HandleTypeDef* hcan, board_param_t* param) {
+      |      ^~~~~~~~~~~
+In file included from ../Core/Src/sys_can_receive.c:2:
+../Core/Inc/sys_can_receive.h:12:6: note: previous declaration of 'can_rx_init' with type 'void(CAN_HandleTypeDef *, board_param_t *, uint16_t)' {aka 'void(CAN_HandleTypeDef *, board_param_t *, short unsigned int)'}
+   12 | void can_rx_init(CAN_HandleTypeDef* hcan, board_param_t* params, uint16_t num_params);
+      |      ^~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:46: Core/Src/sys_can_receive.o] Error 1
+"make -j22 all" terminated with exit code 2. Build might be incomplete.
+22:06:09 **** Incremental Build of configuration Debug for project Motor-Interface ****
+make -j22 all 
+arm-none-eabi-size  Motor-Interface.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Motor-Interface.elf
+Finished building: default.size.stdout
+ 
+22:06:33 **** Incremental Build of configuration Debug for project Dashboard ****
+make -j22 all 
+arm-none-eabi-size  Dashboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Dashboard.elf
+Finished building: default.size.stdout
+ 
+22:06:33 **** Incremental Build of configuration Debug for project Driver-Controls ****
+make -j22 all 
+arm-none-eabi-size  Driver-Controls.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Driver-Controls.elf
+Finished building: default.size.stdout
+ 
+22:06:34 **** Incremental Build of configuration Debug for project HVBPS ****
+make -j22 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/sys_can_receive.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_receive.d" -MT"Core/Src/sys_can_receive.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_receive.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:115:3: error: too few arguments to function 'can_rx_init'
+  115 |   can_rx_init(&hcan1, hvbps_params);
+      |   ^~~~~~~~~~~
+In file included from ../Core/Src/main.c:27:
+../Core/Inc/sys_can_receive.h:12:6: note: declared here
+   12 | void can_rx_init(CAN_HandleTypeDef* hcan, board_param_t* params, uint16_t num_params);
+      |      ^~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:46: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/sys_can_receive.c:12:6: error: conflicting types for 'can_rx_init'; have 'void(CAN_HandleTypeDef *, board_param_t *)'
+   12 | void can_rx_init(CAN_HandleTypeDef* hcan, board_param_t* param) {
+      |      ^~~~~~~~~~~
+In file included from ../Core/Src/sys_can_receive.c:2:
+../Core/Inc/sys_can_receive.h:12:6: note: previous declaration of 'can_rx_init' with type 'void(CAN_HandleTypeDef *, board_param_t *, uint16_t)' {aka 'void(CAN_HandleTypeDef *, board_param_t *, short unsigned int)'}
+   12 | void can_rx_init(CAN_HandleTypeDef* hcan, board_param_t* params, uint16_t num_params);
+      |      ^~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:46: Core/Src/sys_can_receive.o] Error 1
+"make -j22 all" terminated with exit code 2. Build might be incomplete.
+22:06:34 **** Incremental Build of configuration Debug for project Motor-Interface ****
+make -j22 all 
+arm-none-eabi-size  Motor-Interface.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Motor-Interface.elf
+Finished building: default.size.stdout
+ 
+22:06:50 **** Incremental Build of configuration Debug for project Dashboard ****
+make -j22 all 
+arm-none-eabi-size  Dashboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Dashboard.elf
+Finished building: default.size.stdout
+ 
+22:06:51 **** Incremental Build of configuration Debug for project Driver-Controls ****
+make -j22 all 
+arm-none-eabi-size  Driver-Controls.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Driver-Controls.elf
+Finished building: default.size.stdout
+ 
+22:06:51 **** Incremental Build of configuration Debug for project HVBPS ****
+make -j22 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/sys_can_receive.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_receive.d" -MT"Core/Src/sys_can_receive.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_receive.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:115:3: error: too few arguments to function 'can_rx_init'
+  115 |   can_rx_init(&hcan1, hvbps_params);
+      |   ^~~~~~~~~~~
+In file included from ../Core/Src/main.c:27:
+../Core/Inc/sys_can_receive.h:12:6: note: declared here
+   12 | void can_rx_init(CAN_HandleTypeDef* hcan, board_param_t* params, uint16_t num_params);
+      |      ^~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:46: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/sys_can_receive.c:12:6: error: conflicting types for 'can_rx_init'; have 'void(CAN_HandleTypeDef *, board_param_t *)'
+   12 | void can_rx_init(CAN_HandleTypeDef* hcan, board_param_t* param) {
+      |      ^~~~~~~~~~~
+In file included from ../Core/Src/sys_can_receive.c:2:
+../Core/Inc/sys_can_receive.h:12:6: note: previous declaration of 'can_rx_init' with type 'void(CAN_HandleTypeDef *, board_param_t *, uint16_t)' {aka 'void(CAN_HandleTypeDef *, board_param_t *, short unsigned int)'}
+   12 | void can_rx_init(CAN_HandleTypeDef* hcan, board_param_t* params, uint16_t num_params);
+      |      ^~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:46: Core/Src/sys_can_receive.o] Error 1
+"make -j22 all" terminated with exit code 2. Build might be incomplete.
+22:06:52 **** Incremental Build of configuration Debug for project Motor-Interface ****
+make -j22 all 
+arm-none-eabi-size  Motor-Interface.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Motor-Interface.elf
+Finished building: default.size.stdout
+ 
+22:07:13 **** Incremental Build of configuration Debug for project Dashboard ****
+make -j22 all 
+arm-none-eabi-size  Dashboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Dashboard.elf
+Finished building: default.size.stdout
+ 
+22:07:13 **** Incremental Build of configuration Debug for project Driver-Controls ****
+make -j22 all 
+arm-none-eabi-size  Driver-Controls.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Driver-Controls.elf
+Finished building: default.size.stdout
+ 
+22:07:14 **** Incremental Build of configuration Debug for project HVBPS ****
+make -j22 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/sys_can_receive.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_receive.d" -MT"Core/Src/sys_can_receive.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_receive.o"
+arm-none-eabi-gcc -o "HVBPS.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\corre\coding\November-Car\HVBPS\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="HVBPS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: HVBPS.elf
+ 
+arm-none-eabi-size  HVBPS.elf 
+arm-none-eabi-objdump -h -S HVBPS.elf  > "HVBPS.list"
+   text	   data	    bss	    dec	    hex	filename
+  14532	    160	   2096	  16788	   4194	HVBPS.elf
+Finished building: default.size.stdout
+ 
+Finished building: HVBPS.list
+ 
+22:07:15 **** Incremental Build of configuration Debug for project Motor-Interface ****
+make -j22 all 
+arm-none-eabi-size  Motor-Interface.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Motor-Interface.elf
+Finished building: default.size.stdout
+ 
+22:14:43 **** Incremental Build of configuration Debug for project Dashboard ****
+make -j22 all 
+arm-none-eabi-size  Dashboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Dashboard.elf
+Finished building: default.size.stdout
+ 
+22:14:44 **** Incremental Build of configuration Debug for project Driver-Controls ****
+make -j22 all 
+arm-none-eabi-size  Driver-Controls.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Driver-Controls.elf
+Finished building: default.size.stdout
+ 
+22:14:44 **** Incremental Build of configuration Debug for project HVBPS ****
+make -j22 all 
+arm-none-eabi-gcc "../Core/Src/board_params.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/board_params.d" -MT"Core/Src/board_params.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/board_params.o"
+arm-none-eabi-gcc "../Core/Src/board_specific_params.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/board_specific_params.d" -MT"Core/Src/board_specific_params.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/board_specific_params.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f7xx_hal_msp.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f7xx_hal_msp.d" -MT"Core/Src/stm32f7xx_hal_msp.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f7xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f7xx_it.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f7xx_it.d" -MT"Core/Src/stm32f7xx_it.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f7xx_it.o"
+arm-none-eabi-gcc "../Core/Src/sys_can_receive.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_receive.d" -MT"Core/Src/sys_can_receive.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_receive.o"
+arm-none-eabi-gcc "../Core/Src/sys_can_transmit.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_transmit.d" -MT"Core/Src/sys_can_transmit.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_transmit.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f7xx.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f7xx.d" -MT"Core/Src/system_stm32f7xx.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f7xx.o"
+../Core/Src/sys_can_transmit.c: In function 'can_tx_init':
+../Core/Src/sys_can_transmit.c:35:19: error: assignment to expression with array type
+   35 |         tx_params = malloc(sizeof(board_param_t*) * num_tx_params);
+      |                   ^
+make: *** [Core/Src/subdir.mk:46: Core/Src/sys_can_transmit.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j22 all" terminated with exit code 2. Build might be incomplete.
+22:14:45 **** Incremental Build of configuration Debug for project Motor-Interface ****
+make -j22 all 
+arm-none-eabi-size  Motor-Interface.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Motor-Interface.elf
+Finished building: default.size.stdout
+ 
+22:15:26 **** Incremental Build of configuration Debug for project Dashboard ****
+make -j22 all 
+arm-none-eabi-size  Dashboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Dashboard.elf
+Finished building: default.size.stdout
+ 
+22:15:27 **** Incremental Build of configuration Debug for project Driver-Controls ****
+make -j22 all 
+arm-none-eabi-size  Driver-Controls.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Driver-Controls.elf
+Finished building: default.size.stdout
+ 
+22:15:27 **** Incremental Build of configuration Debug for project HVBPS ****
+make -j22 all 
+arm-none-eabi-gcc "../Core/Src/sys_can_transmit.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_transmit.d" -MT"Core/Src/sys_can_transmit.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_transmit.o"
+arm-none-eabi-gcc -o "HVBPS.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\corre\coding\November-Car\HVBPS\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="HVBPS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: HVBPS.elf
+ 
+arm-none-eabi-size  HVBPS.elf 
+arm-none-eabi-objdump -h -S HVBPS.elf  > "HVBPS.list"
+   text	   data	    bss	    dec	    hex	filename
+  13912	     84	   1764	  15760	   3d90	HVBPS.elf
+Finished building: default.size.stdout
+ 
+Finished building: HVBPS.list
+ 
+22:15:29 **** Incremental Build of configuration Debug for project Motor-Interface ****
+make -j22 all 
+arm-none-eabi-size  Motor-Interface.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Motor-Interface.elf
+Finished building: default.size.stdout
+ 
+22:36:03 **** Incremental Build of configuration Debug for project Dashboard ****
+make -j22 all 
+arm-none-eabi-size  Dashboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Dashboard.elf
+Finished building: default.size.stdout
+ 
+22:36:04 **** Incremental Build of configuration Debug for project Driver-Controls ****
+make -j22 all 
+arm-none-eabi-size  Driver-Controls.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Driver-Controls.elf
+Finished building: default.size.stdout
+ 
+22:36:04 **** Incremental Build of configuration Debug for project HVBPS ****
+make -j22 all 
+arm-none-eabi-size  HVBPS.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13912	     84	   1764	  15760	   3d90	HVBPS.elf
+Finished building: default.size.stdout
+ 
+22:36:05 **** Incremental Build of configuration Debug for project Motor-Interface ****
+make -j22 all 
+arm-none-eabi-size  Motor-Interface.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Motor-Interface.elf
+Finished building: default.size.stdout
+ 
+16:10:01 **** Incremental Build of configuration Debug for project HVBPS ****
+make -j22 all 
+arm-none-eabi-gcc "../Core/Src/board_params.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/board_params.d" -MT"Core/Src/board_params.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/board_params.o"
+arm-none-eabi-gcc "../Core/Src/board_specific_params.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/board_specific_params.d" -MT"Core/Src/board_specific_params.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/board_specific_params.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f7xx_it.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f7xx_it.d" -MT"Core/Src/stm32f7xx_it.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f7xx_it.o"
+arm-none-eabi-gcc "../Core/Src/sys_can_receive.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_receive.d" -MT"Core/Src/sys_can_receive.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_receive.o"
+arm-none-eabi-gcc "../Core/Src/sys_can_transmit.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_transmit.d" -MT"Core/Src/sys_can_transmit.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_transmit.o"
+In file included from ../Core/Inc/board_specific_params.h:9,
+                 from ../Core/Src/board_specific_params.c:1:
+../Core/Inc/board_params.h:20:32: error: unknown type name 'board_param'
+   20 |         void (*param_function)(board_param*);
+      |                                ^~~~~~~~~~~
+../Core/Inc/board_params.h:21:1: warning: no semicolon at end of struct or union
+   21 | } board_param_t;
+      | ^
+In file included from ../Core/Src/board_params.c:1:
+../Core/Inc/board_params.h:20:32: error: unknown type name 'board_param'
+   20 |         void (*param_function)(board_param*);
+      |                                ^~~~~~~~~~~
+../Core/Inc/board_params.h:21:1: warning: no semicolon at end of struct or union
+   21 | } board_param_t;
+      | ^
+In file included from ../Core/Inc/board_specific_params.h:9,
+                 from ../Core/Src/main.c:20:
+../Core/Inc/board_params.h:20:32: error: unknown type name 'board_param'
+   20 |         void (*param_function)(board_param*);
+      |                                ^~~~~~~~~~~
+../Core/Inc/board_params.h:21:1: warning: no semicolon at end of struct or union
+   21 | } board_param_t;
+      | ^
+make: *** [Core/Src/subdir.mk:46: Core/Src/board_specific_params.o] Error 1
+make: *** Waiting for unfinished jobs....
+In file included from ../Core/Inc/board_specific_params.h:9,
+                 from ../Core/Src/sys_can_receive.c:1:
+../Core/Inc/board_params.h:20:32: error: unknown type name 'board_param'
+   20 |         void (*param_function)(board_param*);
+      |                                ^~~~~~~~~~~
+../Core/Inc/board_params.h:21:1: warning: no semicolon at end of struct or union
+   21 | } board_param_t;
+      | ^
+make: *** [Core/Src/subdir.mk:46: Core/Src/board_params.o] Error 1
+make: *** [Core/Src/subdir.mk:46: Core/Src/main.o] Error 1
+In file included from ../Core/Inc/sys_can_transmit.h:6,
+                 from ../Core/Src/sys_can_transmit.c:1:
+../Core/Inc/board_params.h:20:32: error: unknown type name 'board_param'
+   20 |         void (*param_function)(board_param*);
+      |                                ^~~~~~~~~~~
+../Core/Inc/board_params.h:21:1: warning: no semicolon at end of struct or union
+   21 | } board_param_t;
+      | ^
+In file included from ../Core/Inc/sys_can_transmit.h:6,
+                 from ../Core/Src/stm32f7xx_it.c:23:
+../Core/Inc/board_params.h:20:32: error: unknown type name 'board_param'
+   20 |         void (*param_function)(board_param*);
+      |                                ^~~~~~~~~~~
+../Core/Inc/board_params.h:21:1: warning: no semicolon at end of struct or union
+   21 | } board_param_t;
+      | ^
+make: *** [Core/Src/subdir.mk:46: Core/Src/stm32f7xx_it.o] Error 1
+make: *** [Core/Src/subdir.mk:46: Core/Src/sys_can_transmit.o] Error 1
+make: *** [Core/Src/subdir.mk:46: Core/Src/sys_can_receive.o] Error 1
+"make -j22 all" terminated with exit code 2. Build might be incomplete.
+16:10:03 **** Incremental Build of configuration Debug for project Motor-Interface ****
+make -j22 all 
+arm-none-eabi-size  Motor-Interface.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Motor-Interface.elf
+Finished building: default.size.stdout
+ 
+16:10:13 **** Incremental Build of configuration Debug for project HVBPS ****
+make -j22 all 
+arm-none-eabi-gcc "../Core/Src/board_params.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/board_params.d" -MT"Core/Src/board_params.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/board_params.o"
+arm-none-eabi-gcc "../Core/Src/board_specific_params.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/board_specific_params.d" -MT"Core/Src/board_specific_params.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/board_specific_params.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f7xx_it.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f7xx_it.d" -MT"Core/Src/stm32f7xx_it.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f7xx_it.o"
+arm-none-eabi-gcc "../Core/Src/sys_can_receive.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_receive.d" -MT"Core/Src/sys_can_receive.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_receive.o"
+arm-none-eabi-gcc "../Core/Src/sys_can_transmit.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_transmit.d" -MT"Core/Src/sys_can_transmit.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_transmit.o"
+arm-none-eabi-gcc -o "HVBPS.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\corre\coding\November-Car\HVBPS\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="HVBPS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: HVBPS.elf
+ 
+arm-none-eabi-size  HVBPS.elf 
+arm-none-eabi-objdump -h -S HVBPS.elf  > "HVBPS.list"
+   text	   data	    bss	    dec	    hex	filename
+  13912	     92	   1764	  15768	   3d98	HVBPS.elf
+Finished building: default.size.stdout
+ 
+Finished building: HVBPS.list
+ 
+16:10:15 **** Incremental Build of configuration Debug for project Motor-Interface ****
+make -j22 all 
+arm-none-eabi-size  Motor-Interface.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Motor-Interface.elf
+Finished building: default.size.stdout
+ 
+16:13:25 **** Incremental Build of configuration Debug for project HVBPS ****
+make -j22 all 
+arm-none-eabi-gcc "../Core/Src/board_params.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/board_params.d" -MT"Core/Src/board_params.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/board_params.o"
+arm-none-eabi-gcc "../Core/Src/board_specific_params.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/board_specific_params.d" -MT"Core/Src/board_specific_params.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/board_specific_params.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f7xx_it.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f7xx_it.d" -MT"Core/Src/stm32f7xx_it.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f7xx_it.o"
+arm-none-eabi-gcc "../Core/Src/sys_can_receive.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_receive.d" -MT"Core/Src/sys_can_receive.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_receive.o"
+arm-none-eabi-gcc "../Core/Src/sys_can_transmit.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_transmit.d" -MT"Core/Src/sys_can_transmit.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_transmit.o"
+In file included from ../Core/Inc/board_specific_params.h:9,
+                 from ../Core/Src/board_specific_params.c:1:
+../Core/Inc/board_params.h:8:16: warning: useless storage class specifier in empty declaration
+    8 | typedef struct board_param_impl_t;
+      |                ^~~~~~~~~~~~~~~~~~
+../Core/Inc/board_params.h:18:9: error: unknown type name 'board_param_impl_t'
+   18 |         board_param_impl_t impl;
+      |         ^~~~~~~~~~~~~~~~~~
+In file included from ../Core/Src/board_params.c:1:
+../Core/Inc/board_params.h:8:16: warning: useless storage class specifier in empty declaration
+    8 | typedef struct board_param_impl_t;
+      |                ^~~~~~~~~~~~~~~~~~
+../Core/Inc/board_params.h:18:9: error: unknown type name 'board_param_impl_t'
+   18 |         board_param_impl_t impl;
+      |         ^~~~~~~~~~~~~~~~~~
+In file included from ../Core/Inc/board_specific_params.h:9,
+                 from ../Core/Src/main.c:20:
+../Core/Inc/board_params.h:8:16: warning: useless storage class specifier in empty declaration
+    8 | typedef struct board_param_impl_t;
+      |                ^~~~~~~~~~~~~~~~~~
+../Core/Inc/board_params.h:18:9: error: unknown type name 'board_param_impl_t'
+   18 |         board_param_impl_t impl;
+      |         ^~~~~~~~~~~~~~~~~~
+In file included from ../Core/Inc/board_specific_params.h:9,
+                 from ../Core/Src/sys_can_receive.c:1:
+../Core/Inc/board_params.h:8:16: warning: useless storage class specifier in empty declaration
+    8 | typedef struct board_param_impl_t;
+      |                ^~~~~~~~~~~~~~~~~~
+../Core/Inc/board_params.h:18:9: error: unknown type name 'board_param_impl_t'
+   18 |         board_param_impl_t impl;
+      |         ^~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:46: Core/Src/board_specific_params.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/board_params.c: In function 'check_staleness':
+../Core/Src/board_params.c:21:31: error: 'board_param_t' {aka 'struct board_param'} has no member named 'check_stale'
+   21 |                 if (!params[i]->check_stale) continue;
+      |                               ^~
+make: *** [Core/Src/subdir.mk:46: Core/Src/main.o] Error 1
+make: *** [Core/Src/subdir.mk:46: Core/Src/board_params.o] Error 1
+In file included from ../Core/Inc/sys_can_transmit.h:6,
+                 from ../Core/Src/stm32f7xx_it.c:23:
+../Core/Inc/board_params.h:8:16: warning: useless storage class specifier in empty declaration
+    8 | typedef struct board_param_impl_t;
+      |                ^~~~~~~~~~~~~~~~~~
+../Core/Inc/board_params.h:18:9: error: unknown type name 'board_param_impl_t'
+   18 |         board_param_impl_t impl;
+      |         ^~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:46: Core/Src/stm32f7xx_it.o] Error 1
+In file included from ../Core/Inc/sys_can_transmit.h:6,
+                 from ../Core/Src/sys_can_transmit.c:1:
+../Core/Inc/board_params.h:8:16: warning: useless storage class specifier in empty declaration
+    8 | typedef struct board_param_impl_t;
+      |                ^~~~~~~~~~~~~~~~~~
+../Core/Inc/board_params.h:18:9: error: unknown type name 'board_param_impl_t'
+   18 |         board_param_impl_t impl;
+      |         ^~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:46: Core/Src/sys_can_receive.o] Error 1
+make: *** [Core/Src/subdir.mk:46: Core/Src/sys_can_transmit.o] Error 1
+"make -j22 all" terminated with exit code 2. Build might be incomplete.
+16:13:26 **** Incremental Build of configuration Debug for project Motor-Interface ****
+make -j22 all 
+arm-none-eabi-size  Motor-Interface.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Motor-Interface.elf
+Finished building: default.size.stdout
+ 
+16:14:03 **** Incremental Build of configuration Debug for project HVBPS ****
+make -j22 all 
+arm-none-eabi-gcc "../Core/Src/board_params.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/board_params.d" -MT"Core/Src/board_params.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/board_params.o"
+arm-none-eabi-gcc "../Core/Src/board_specific_params.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/board_specific_params.d" -MT"Core/Src/board_specific_params.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/board_specific_params.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f7xx_it.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f7xx_it.d" -MT"Core/Src/stm32f7xx_it.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f7xx_it.o"
+arm-none-eabi-gcc "../Core/Src/sys_can_receive.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_receive.d" -MT"Core/Src/sys_can_receive.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_receive.o"
+arm-none-eabi-gcc "../Core/Src/sys_can_transmit.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_transmit.d" -MT"Core/Src/sys_can_transmit.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_transmit.o"
+In file included from ../Core/Src/board_params.c:1:
+../Core/Inc/board_params.h:18:33: error: field 'impl' has incomplete type
+   18 |         struct board_param_impl impl;
+      |                                 ^~~~
+In file included from ../Core/Inc/board_specific_params.h:9,
+                 from ../Core/Src/main.c:20:
+../Core/Inc/board_params.h:18:33: error: field 'impl' has incomplete type
+   18 |         struct board_param_impl impl;
+      |                                 ^~~~
+In file included from ../Core/Inc/board_specific_params.h:9,
+                 from ../Core/Src/board_specific_params.c:1:
+../Core/Inc/board_params.h:18:33: error: field 'impl' has incomplete type
+   18 |         struct board_param_impl impl;
+      |                                 ^~~~
+make: *** [Core/Src/subdir.mk:46: Core/Src/board_specific_params.o] Error 1
+make: *** Waiting for unfinished jobs....
+In file included from ../Core/Inc/board_specific_params.h:9,
+                 from ../Core/Src/sys_can_receive.c:1:
+../Core/Inc/board_params.h:18:33: error: field 'impl' has incomplete type
+   18 |         struct board_param_impl impl;
+      |                                 ^~~~
+../Core/Src/board_params.c: In function 'check_staleness':
+../Core/Src/board_params.c:21:31: error: 'board_param_t' {aka 'struct board_param'} has no member named 'check_stale'
+   21 |                 if (!params[i]->check_stale) continue;
+      |                               ^~
+make: *** [Core/Src/subdir.mk:46: Core/Src/board_params.o] Error 1
+make: *** [Core/Src/subdir.mk:46: Core/Src/main.o] Error 1
+In file included from ../Core/Inc/sys_can_transmit.h:6,
+                 from ../Core/Src/stm32f7xx_it.c:23:
+../Core/Inc/board_params.h:18:33: error: field 'impl' has incomplete type
+   18 |         struct board_param_impl impl;
+      |                                 ^~~~
+In file included from ../Core/Inc/sys_can_transmit.h:6,
+                 from ../Core/Src/sys_can_transmit.c:1:
+../Core/Inc/board_params.h:18:33: error: field 'impl' has incomplete type
+   18 |         struct board_param_impl impl;
+      |                                 ^~~~
+make: *** [Core/Src/subdir.mk:46: Core/Src/stm32f7xx_it.o] Error 1
+make: *** [Core/Src/subdir.mk:46: Core/Src/sys_can_transmit.o] Error 1
+make: *** [Core/Src/subdir.mk:46: Core/Src/sys_can_receive.o] Error 1
+"make -j22 all" terminated with exit code 2. Build might be incomplete.
+16:14:04 **** Incremental Build of configuration Debug for project Motor-Interface ****
+make -j22 all 
+arm-none-eabi-size  Motor-Interface.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Motor-Interface.elf
+Finished building: default.size.stdout
+ 
+16:14:29 **** Incremental Build of configuration Debug for project HVBPS ****
+make -j22 all 
+arm-none-eabi-gcc "../Core/Src/board_params.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/board_params.d" -MT"Core/Src/board_params.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/board_params.o"
+arm-none-eabi-gcc "../Core/Src/board_specific_params.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/board_specific_params.d" -MT"Core/Src/board_specific_params.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/board_specific_params.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f7xx_it.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f7xx_it.d" -MT"Core/Src/stm32f7xx_it.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f7xx_it.o"
+arm-none-eabi-gcc "../Core/Src/sys_can_receive.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_receive.d" -MT"Core/Src/sys_can_receive.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_receive.o"
+arm-none-eabi-gcc "../Core/Src/sys_can_transmit.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_transmit.d" -MT"Core/Src/sys_can_transmit.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_transmit.o"
+In file included from ../Core/Src/board_params.c:1:
+../Core/Inc/board_params.h:17:32: warning: declaration does not declare anything
+   17 |         struct board_param_impl;
+      |                                ^
+In file included from ../Core/Inc/board_specific_params.h:9,
+                 from ../Core/Src/board_specific_params.c:1:
+../Core/Inc/board_params.h:17:32: warning: declaration does not declare anything
+   17 |         struct board_param_impl;
+      |                                ^
+In file included from ../Core/Inc/board_specific_params.h:9,
+                 from ../Core/Src/main.c:20:
+../Core/Inc/board_params.h:17:32: warning: declaration does not declare anything
+   17 |         struct board_param_impl;
+      |                                ^
+In file included from ../Core/Inc/board_specific_params.h:9,
+                 from ../Core/Src/sys_can_receive.c:1:
+../Core/Inc/board_params.h:17:32: warning: declaration does not declare anything
+   17 |         struct board_param_impl;
+      |                                ^
+../Core/Src/board_params.c: In function 'check_staleness':
+../Core/Src/board_params.c:21:31: error: 'board_param_t' {aka 'struct board_param'} has no member named 'check_stale'
+   21 |                 if (!params[i]->check_stale) continue;
+      |                               ^~
+make: *** [Core/Src/subdir.mk:46: Core/Src/board_params.o] Error 1
+make: *** Waiting for unfinished jobs....
+In file included from ../Core/Inc/sys_can_transmit.h:6,
+                 from ../Core/Src/stm32f7xx_it.c:23:
+../Core/Inc/board_params.h:17:32: warning: declaration does not declare anything
+   17 |         struct board_param_impl;
+      |                                ^
+In file included from ../Core/Inc/sys_can_transmit.h:6,
+                 from ../Core/Src/sys_can_transmit.c:1:
+../Core/Inc/board_params.h:17:32: warning: declaration does not declare anything
+   17 |         struct board_param_impl;
+      |                                ^
+"make -j22 all" terminated with exit code 2. Build might be incomplete.
+16:14:30 **** Incremental Build of configuration Debug for project Motor-Interface ****
+make -j22 all 
+arm-none-eabi-size  Motor-Interface.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Motor-Interface.elf
+Finished building: default.size.stdout
+ 
+16:15:27 **** Incremental Build of configuration Debug for project HVBPS ****
+make -j22 all 
+arm-none-eabi-gcc "../Core/Src/board_params.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/board_params.d" -MT"Core/Src/board_params.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/board_params.o"
+arm-none-eabi-gcc "../Core/Src/board_specific_params.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/board_specific_params.d" -MT"Core/Src/board_specific_params.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/board_specific_params.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f7xx_it.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f7xx_it.d" -MT"Core/Src/stm32f7xx_it.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f7xx_it.o"
+arm-none-eabi-gcc "../Core/Src/sys_can_receive.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_receive.d" -MT"Core/Src/sys_can_receive.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_receive.o"
+arm-none-eabi-gcc "../Core/Src/sys_can_transmit.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_transmit.d" -MT"Core/Src/sys_can_transmit.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_transmit.o"
+In file included from ../Core/Src/board_params.c:1:
+../Core/Inc/board_params.h:17:32: warning: declaration does not declare anything
+   17 |         struct board_param_impl;
+      |                                ^
+In file included from ../Core/Inc/board_specific_params.h:9,
+                 from ../Core/Src/board_specific_params.c:1:
+../Core/Inc/board_params.h:17:32: warning: declaration does not declare anything
+   17 |         struct board_param_impl;
+      |                                ^
+In file included from ../Core/Inc/board_specific_params.h:9,
+                 from ../Core/Src/main.c:20:
+../Core/Inc/board_params.h:17:32: warning: declaration does not declare anything
+   17 |         struct board_param_impl;
+      |                                ^
+In file included from ../Core/Inc/board_specific_params.h:9,
+                 from ../Core/Src/sys_can_receive.c:1:
+../Core/Inc/board_params.h:17:32: warning: declaration does not declare anything
+   17 |         struct board_param_impl;
+      |                                ^
+In file included from ../Core/Inc/sys_can_transmit.h:6,
+                 from ../Core/Src/stm32f7xx_it.c:23:
+../Core/Inc/board_params.h:17:32: warning: declaration does not declare anything
+   17 |         struct board_param_impl;
+      |                                ^
+In file included from ../Core/Inc/sys_can_transmit.h:6,
+                 from ../Core/Src/sys_can_transmit.c:1:
+../Core/Inc/board_params.h:17:32: warning: declaration does not declare anything
+   17 |         struct board_param_impl;
+      |                                ^
+arm-none-eabi-gcc -o "HVBPS.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\corre\coding\November-Car\HVBPS\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="HVBPS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: HVBPS.elf
+ 
+arm-none-eabi-size  HVBPS.elf 
+arm-none-eabi-objdump -h -S HVBPS.elf  > "HVBPS.list"
+   text	   data	    bss	    dec	    hex	filename
+  13912	     92	   1764	  15768	   3d98	HVBPS.elf
+Finished building: default.size.stdout
+ 
+Finished building: HVBPS.list
+ 
+16:15:28 **** Incremental Build of configuration Debug for project Motor-Interface ****
+make -j22 all 
+arm-none-eabi-size  Motor-Interface.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Motor-Interface.elf
+Finished building: default.size.stdout
+ 
+16:15:45 **** Incremental Build of configuration Debug for project HVBPS ****
+make -j22 all 
+arm-none-eabi-gcc "../Core/Src/board_params.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/board_params.d" -MT"Core/Src/board_params.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/board_params.o"
+arm-none-eabi-gcc "../Core/Src/board_specific_params.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/board_specific_params.d" -MT"Core/Src/board_specific_params.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/board_specific_params.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f7xx_it.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f7xx_it.d" -MT"Core/Src/stm32f7xx_it.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f7xx_it.o"
+arm-none-eabi-gcc "../Core/Src/sys_can_receive.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_receive.d" -MT"Core/Src/sys_can_receive.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_receive.o"
+arm-none-eabi-gcc "../Core/Src/sys_can_transmit.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_transmit.d" -MT"Core/Src/sys_can_transmit.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_transmit.o"
+In file included from ../Core/Src/board_params.c:1:
+../Core/Inc/board_params.h:18:33: error: field 'impl' has incomplete type
+   18 |         struct board_param_impl impl;
+      |                                 ^~~~
+In file included from ../Core/Inc/board_specific_params.h:9,
+                 from ../Core/Src/main.c:20:
+../Core/Inc/board_params.h:18:33: error: field 'impl' has incomplete type
+   18 |         struct board_param_impl impl;
+      |                                 ^~~~
+In file included from ../Core/Inc/board_specific_params.h:9,
+                 from ../Core/Src/board_specific_params.c:1:
+../Core/Inc/board_params.h:18:33: error: field 'impl' has incomplete type
+   18 |         struct board_param_impl impl;
+      |                                 ^~~~
+make: *** [Core/Src/subdir.mk:46: Core/Src/board_specific_params.o] Error 1
+make: *** Waiting for unfinished jobs....
+In file included from ../Core/Inc/board_specific_params.h:9,
+                 from ../Core/Src/sys_can_receive.c:1:
+../Core/Inc/board_params.h:18:33: error: field 'impl' has incomplete type
+   18 |         struct board_param_impl impl;
+      |                                 ^~~~
+make: *** [Core/Src/subdir.mk:46: Core/Src/board_params.o] Error 1
+make: *** [Core/Src/subdir.mk:46: Core/Src/main.o] Error 1
+In file included from ../Core/Inc/sys_can_transmit.h:6,
+                 from ../Core/Src/stm32f7xx_it.c:23:
+../Core/Inc/board_params.h:18:33: error: field 'impl' has incomplete type
+   18 |         struct board_param_impl impl;
+      |                                 ^~~~
+In file included from ../Core/Inc/sys_can_transmit.h:6,
+                 from ../Core/Src/sys_can_transmit.c:1:
+../Core/Inc/board_params.h:18:33: error: field 'impl' has incomplete type
+   18 |         struct board_param_impl impl;
+      |                                 ^~~~
+make: *** [Core/Src/subdir.mk:46: Core/Src/stm32f7xx_it.o] Error 1
+make: *** [Core/Src/subdir.mk:46: Core/Src/sys_can_transmit.o] Error 1
+make: *** [Core/Src/subdir.mk:46: Core/Src/sys_can_receive.o] Error 1
+"make -j22 all" terminated with exit code 2. Build might be incomplete.
+16:15:45 **** Incremental Build of configuration Debug for project Motor-Interface ****
+make -j22 all 
+arm-none-eabi-size  Motor-Interface.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Motor-Interface.elf
+Finished building: default.size.stdout
+ 
+16:15:56 **** Incremental Build of configuration Debug for project HVBPS ****
+make -j22 all 
+arm-none-eabi-gcc "../Core/Src/board_params.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/board_params.d" -MT"Core/Src/board_params.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/board_params.o"
+arm-none-eabi-gcc "../Core/Src/board_specific_params.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/board_specific_params.d" -MT"Core/Src/board_specific_params.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/board_specific_params.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f7xx_it.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f7xx_it.d" -MT"Core/Src/stm32f7xx_it.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f7xx_it.o"
+arm-none-eabi-gcc "../Core/Src/sys_can_receive.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_receive.d" -MT"Core/Src/sys_can_receive.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_receive.o"
+arm-none-eabi-gcc "../Core/Src/sys_can_transmit.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_transmit.d" -MT"Core/Src/sys_can_transmit.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_transmit.o"
+In file included from ../Core/Src/board_params.c:1:
+../Core/Inc/board_params.h:8:15: warning: useless storage class specifier in empty declaration
+    8 | extern struct board_param_impl;
+      |               ^~~~~~~~~~~~~~~~
+../Core/Inc/board_params.h:18:33: error: field 'impl' has incomplete type
+   18 |         struct board_param_impl impl;
+      |                                 ^~~~
+In file included from ../Core/Inc/board_specific_params.h:9,
+                 from ../Core/Src/board_specific_params.c:1:
+../Core/Inc/board_params.h:8:15: warning: useless storage class specifier in empty declaration
+    8 | extern struct board_param_impl;
+      |               ^~~~~~~~~~~~~~~~
+../Core/Inc/board_params.h:18:33: error: field 'impl' has incomplete type
+   18 |         struct board_param_impl impl;
+      |                                 ^~~~
+In file included from ../Core/Inc/board_specific_params.h:9,
+                 from ../Core/Src/main.c:20:
+../Core/Inc/board_params.h:8:15: warning: useless storage class specifier in empty declaration
+    8 | extern struct board_param_impl;
+      |               ^~~~~~~~~~~~~~~~
+../Core/Inc/board_params.h:18:33: error: field 'impl' has incomplete type
+   18 |         struct board_param_impl impl;
+      |                                 ^~~~
+make: *** [Core/Src/subdir.mk:46: Core/Src/board_specific_params.o] Error 1
+make: *** Waiting for unfinished jobs....
+In file included from ../Core/Inc/board_specific_params.h:9,
+                 from ../Core/Src/sys_can_receive.c:1:
+../Core/Inc/board_params.h:8:15: warning: useless storage class specifier in empty declaration
+    8 | extern struct board_param_impl;
+      |               ^~~~~~~~~~~~~~~~
+../Core/Inc/board_params.h:18:33: error: field 'impl' has incomplete type
+   18 |         struct board_param_impl impl;
+      |                                 ^~~~
+make: *** [Core/Src/subdir.mk:46: Core/Src/main.o] Error 1
+make: *** [Core/Src/subdir.mk:46: Core/Src/board_params.o] Error 1
+In file included from ../Core/Inc/sys_can_transmit.h:6,
+                 from ../Core/Src/stm32f7xx_it.c:23:
+../Core/Inc/board_params.h:8:15: warning: useless storage class specifier in empty declaration
+    8 | extern struct board_param_impl;
+      |               ^~~~~~~~~~~~~~~~
+../Core/Inc/board_params.h:18:33: error: field 'impl' has incomplete type
+   18 |         struct board_param_impl impl;
+      |                                 ^~~~
+In file included from ../Core/Inc/sys_can_transmit.h:6,
+                 from ../Core/Src/sys_can_transmit.c:1:
+../Core/Inc/board_params.h:8:15: warning: useless storage class specifier in empty declaration
+    8 | extern struct board_param_impl;
+      |               ^~~~~~~~~~~~~~~~
+../Core/Inc/board_params.h:18:33: error: field 'impl' has incomplete type
+   18 |         struct board_param_impl impl;
+      |                                 ^~~~
+make: *** [Core/Src/subdir.mk:46: Core/Src/stm32f7xx_it.o] Error 1
+make: *** [Core/Src/subdir.mk:46: Core/Src/sys_can_receive.o] Error 1
+make: *** [Core/Src/subdir.mk:46: Core/Src/sys_can_transmit.o] Error 1
+"make -j22 all" terminated with exit code 2. Build might be incomplete.
+16:15:57 **** Incremental Build of configuration Debug for project Motor-Interface ****
+make -j22 all 
+arm-none-eabi-size  Motor-Interface.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Motor-Interface.elf
+Finished building: default.size.stdout
+ 
+16:16:04 **** Incremental Build of configuration Debug for project HVBPS ****
+make -j22 all 
+arm-none-eabi-gcc "../Core/Src/board_params.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/board_params.d" -MT"Core/Src/board_params.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/board_params.o"
+arm-none-eabi-gcc "../Core/Src/board_specific_params.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/board_specific_params.d" -MT"Core/Src/board_specific_params.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/board_specific_params.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f7xx_it.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f7xx_it.d" -MT"Core/Src/stm32f7xx_it.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f7xx_it.o"
+arm-none-eabi-gcc "../Core/Src/sys_can_receive.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_receive.d" -MT"Core/Src/sys_can_receive.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_receive.o"
+arm-none-eabi-gcc "../Core/Src/sys_can_transmit.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_transmit.d" -MT"Core/Src/sys_can_transmit.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_transmit.o"
+In file included from ../Core/Src/board_params.c:1:
+../Core/Inc/board_params.h:8:1: error: multiple storage classes in declaration specifiers
+    8 | extern typedef struct board_param_impl;
+      | ^~~~~~
+../Core/Inc/board_params.h:8:23: warning: useless storage class specifier in empty declaration
+    8 | extern typedef struct board_param_impl;
+      |                       ^~~~~~~~~~~~~~~~
+../Core/Inc/board_params.h:18:33: error: field 'impl' has incomplete type
+   18 |         struct board_param_impl impl;
+      |                                 ^~~~
+In file included from ../Core/Inc/board_specific_params.h:9,
+                 from ../Core/Src/board_specific_params.c:1:
+../Core/Inc/board_params.h:8:1: error: multiple storage classes in declaration specifiers
+    8 | extern typedef struct board_param_impl;
+      | ^~~~~~
+../Core/Inc/board_params.h:8:23: warning: useless storage class specifier in empty declaration
+    8 | extern typedef struct board_param_impl;
+      |                       ^~~~~~~~~~~~~~~~
+../Core/Inc/board_params.h:18:33: error: field 'impl' has incomplete type
+   18 |         struct board_param_impl impl;
+      |                                 ^~~~
+In file included from ../Core/Inc/board_specific_params.h:9,
+                 from ../Core/Src/main.c:20:
+../Core/Inc/board_params.h:8:1: error: multiple storage classes in declaration specifiers
+    8 | extern typedef struct board_param_impl;
+      | ^~~~~~
+../Core/Inc/board_params.h:8:23: warning: useless storage class specifier in empty declaration
+    8 | extern typedef struct board_param_impl;
+      |                       ^~~~~~~~~~~~~~~~
+../Core/Inc/board_params.h:18:33: error: field 'impl' has incomplete type
+   18 |         struct board_param_impl impl;
+      |                                 ^~~~
+make: *** [Core/Src/subdir.mk:46: Core/Src/board_specific_params.o] Error 1
+make: *** Waiting for unfinished jobs....
+In file included from ../Core/Inc/board_specific_params.h:9,
+                 from ../Core/Src/sys_can_receive.c:1:
+../Core/Inc/board_params.h:8:1: error: multiple storage classes in declaration specifiers
+    8 | extern typedef struct board_param_impl;
+      | ^~~~~~
+../Core/Inc/board_params.h:8:23: warning: useless storage class specifier in empty declaration
+    8 | extern typedef struct board_param_impl;
+      |                       ^~~~~~~~~~~~~~~~
+../Core/Inc/board_params.h:18:33: error: field 'impl' has incomplete type
+   18 |         struct board_param_impl impl;
+      |                                 ^~~~
+make: *** [Core/Src/subdir.mk:46: Core/Src/board_params.o] Error 1
+make: *** [Core/Src/subdir.mk:46: Core/Src/main.o] Error 1
+In file included from ../Core/Inc/sys_can_transmit.h:6,
+                 from ../Core/Src/sys_can_transmit.c:1:
+../Core/Inc/board_params.h:8:1: error: multiple storage classes in declaration specifiers
+    8 | extern typedef struct board_param_impl;
+      | ^~~~~~
+../Core/Inc/board_params.h:8:23: warning: useless storage class specifier in empty declaration
+    8 | extern typedef struct board_param_impl;
+      |                       ^~~~~~~~~~~~~~~~
+In file included from ../Core/Inc/sys_can_transmit.h:6,
+                 from ../Core/Src/stm32f7xx_it.c:23:
+../Core/Inc/board_params.h:8:1: error: multiple storage classes in declaration specifiers
+    8 | extern typedef struct board_param_impl;
+      | ^~~~~~
+../Core/Inc/board_params.h:8:23: warning: useless storage class specifier in empty declaration
+    8 | extern typedef struct board_param_impl;
+      |                       ^~~~~~~~~~~~~~~~
+../Core/Inc/board_params.h:18:33: error: field 'impl' has incomplete type
+   18 |         struct board_param_impl impl;
+      |                                 ^~~~
+../Core/Inc/board_params.h:18:33: error: field 'impl' has incomplete type
+   18 |         struct board_param_impl impl;
+      |                                 ^~~~
+make: *** [Core/Src/subdir.mk:46: Core/Src/stm32f7xx_it.o] Error 1
+make: *** [Core/Src/subdir.mk:46: Core/Src/sys_can_receive.o] Error 1
+make: *** [Core/Src/subdir.mk:46: Core/Src/sys_can_transmit.o] Error 1
+"make -j22 all" terminated with exit code 2. Build might be incomplete.
+16:16:05 **** Incremental Build of configuration Debug for project Motor-Interface ****
+make -j22 all 
+arm-none-eabi-size  Motor-Interface.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Motor-Interface.elf
+Finished building: default.size.stdout
+ 
+16:19:08 **** Incremental Build of configuration Debug for project HVBPS ****
+make -j22 all 
+arm-none-eabi-gcc "../Core/Src/board_params.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/board_params.d" -MT"Core/Src/board_params.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/board_params.o"
+arm-none-eabi-gcc "../Core/Src/board_specific_params.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/board_specific_params.d" -MT"Core/Src/board_specific_params.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/board_specific_params.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f7xx_it.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f7xx_it.d" -MT"Core/Src/stm32f7xx_it.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f7xx_it.o"
+arm-none-eabi-gcc "../Core/Src/sys_can_receive.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_receive.d" -MT"Core/Src/sys_can_receive.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_receive.o"
+arm-none-eabi-gcc "../Core/Src/sys_can_transmit.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_transmit.d" -MT"Core/Src/sys_can_transmit.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_transmit.o"
+arm-none-eabi-gcc -o "HVBPS.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\corre\coding\November-Car\HVBPS\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="HVBPS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: HVBPS.elf
+ 
+arm-none-eabi-size  HVBPS.elf 
+arm-none-eabi-objdump -h -S HVBPS.elf  > "HVBPS.list"
+   text	   data	    bss	    dec	    hex	filename
+  13880	    108	   1764	  15752	   3d88	HVBPS.elf
+Finished building: default.size.stdout
+ 
+Finished building: HVBPS.list
+ 
+16:19:10 **** Incremental Build of configuration Debug for project Motor-Interface ****
+make -j22 all 
+arm-none-eabi-size  Motor-Interface.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Motor-Interface.elf
+Finished building: default.size.stdout
+ 
+16:20:59 **** Incremental Build of configuration Debug for project HVBPS ****
+make -j22 all 
+arm-none-eabi-gcc "../Core/Src/board_params.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/board_params.d" -MT"Core/Src/board_params.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/board_params.o"
+arm-none-eabi-gcc "../Core/Src/board_specific_params.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/board_specific_params.d" -MT"Core/Src/board_specific_params.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/board_specific_params.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f7xx_it.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f7xx_it.d" -MT"Core/Src/stm32f7xx_it.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f7xx_it.o"
+arm-none-eabi-gcc "../Core/Src/sys_can_receive.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_receive.d" -MT"Core/Src/sys_can_receive.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_receive.o"
+arm-none-eabi-gcc "../Core/Src/sys_can_transmit.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_transmit.d" -MT"Core/Src/sys_can_transmit.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_transmit.o"
+In file included from ../Core/Src/board_params.c:1:
+../Core/Inc/board_params.h:14:32: error: unknown type name 'board_param_t'
+   14 |         void (*param_function)(board_param_t*);
+      |                                ^~~~~~~~~~~~~
+../Core/Inc/board_params.h:15:1: warning: no semicolon at end of struct or union
+   15 | } board_param_impl_t;
+      | ^
+In file included from ../Core/Inc/board_specific_params.h:9,
+                 from ../Core/Src/board_specific_params.c:1:
+../Core/Inc/board_params.h:14:32: error: unknown type name 'board_param_t'
+   14 |         void (*param_function)(board_param_t*);
+      |                                ^~~~~~~~~~~~~
+../Core/Inc/board_params.h:15:1: warning: no semicolon at end of struct or union
+   15 | } board_param_impl_t;
+      | ^
+make: *** [Core/Src/subdir.mk:46: Core/Src/board_specific_params.o] Error 1
+make: *** Waiting for unfinished jobs....
+In file included from ../Core/Inc/board_specific_params.h:9,
+                 from ../Core/Src/main.c:20:
+../Core/Inc/board_params.h:14:32: error: unknown type name 'board_param_t'
+   14 |         void (*param_function)(board_param_t*);
+      |                                ^~~~~~~~~~~~~
+../Core/Inc/board_params.h:15:1: warning: no semicolon at end of struct or union
+   15 | } board_param_impl_t;
+      | ^
+In file included from ../Core/Inc/board_specific_params.h:9,
+                 from ../Core/Src/sys_can_receive.c:1:
+../Core/Inc/board_params.h:14:32: error: unknown type name 'board_param_t'
+   14 |         void (*param_function)(board_param_t*);
+      |                                ^~~~~~~~~~~~~
+../Core/Inc/board_params.h:15:1: warning: no semicolon at end of struct or union
+   15 | } board_param_impl_t;
+      | ^
+make: *** [Core/Src/subdir.mk:46: Core/Src/board_params.o] Error 1
+make: *** [Core/Src/subdir.mk:46: Core/Src/main.o] Error 1
+In file included from ../Core/Inc/sys_can_transmit.h:6,
+                 from ../Core/Src/stm32f7xx_it.c:23:
+../Core/Inc/board_params.h:14:32: error: unknown type name 'board_param_t'
+   14 |         void (*param_function)(board_param_t*);
+      |                                ^~~~~~~~~~~~~
+../Core/Inc/board_params.h:15:1: warning: no semicolon at end of struct or union
+   15 | } board_param_impl_t;
+      | ^
+make: *** [Core/Src/subdir.mk:46: Core/Src/stm32f7xx_it.o] Error 1
+make: *** [Core/Src/subdir.mk:46: Core/Src/sys_can_receive.o] Error 1
+In file included from ../Core/Inc/sys_can_transmit.h:6,
+                 from ../Core/Src/sys_can_transmit.c:1:
+../Core/Inc/board_params.h:14:32: error: unknown type name 'board_param_t'
+   14 |         void (*param_function)(board_param_t*);
+      |                                ^~~~~~~~~~~~~
+../Core/Inc/board_params.h:15:1: warning: no semicolon at end of struct or union
+   15 | } board_param_impl_t;
+      | ^
+make: *** [Core/Src/subdir.mk:46: Core/Src/sys_can_transmit.o] Error 1
+"make -j22 all" terminated with exit code 2. Build might be incomplete.
+16:21:00 **** Incremental Build of configuration Debug for project Motor-Interface ****
+make -j22 all 
+arm-none-eabi-size  Motor-Interface.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Motor-Interface.elf
+Finished building: default.size.stdout
+ 
+16:21:11 **** Incremental Build of configuration Debug for project HVBPS ****
+make -j22 all 
+arm-none-eabi-gcc "../Core/Src/board_params.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/board_params.d" -MT"Core/Src/board_params.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/board_params.o"
+arm-none-eabi-gcc "../Core/Src/board_specific_params.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/board_specific_params.d" -MT"Core/Src/board_specific_params.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/board_specific_params.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f7xx_it.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f7xx_it.d" -MT"Core/Src/stm32f7xx_it.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f7xx_it.o"
+arm-none-eabi-gcc "../Core/Src/sys_can_receive.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_receive.d" -MT"Core/Src/sys_can_receive.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_receive.o"
+arm-none-eabi-gcc "../Core/Src/sys_can_transmit.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_transmit.d" -MT"Core/Src/sys_can_transmit.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_transmit.o"
+arm-none-eabi-gcc -o "HVBPS.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\corre\coding\November-Car\HVBPS\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="HVBPS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: HVBPS.elf
+ 
+arm-none-eabi-size  HVBPS.elf 
+arm-none-eabi-objdump -h -S HVBPS.elf  > "HVBPS.list"
+   text	   data	    bss	    dec	    hex	filename
+  13916	    124	   1764	  15804	   3dbc	HVBPS.elf
+Finished building: default.size.stdout
+ 
+Finished building: HVBPS.list
+ 
+16:21:13 **** Incremental Build of configuration Debug for project Motor-Interface ****
+make -j22 all 
+arm-none-eabi-size  Motor-Interface.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Motor-Interface.elf
+Finished building: default.size.stdout
+ 
+16:21:47 **** Incremental Build of configuration Debug for project HVBPS ****
+make -j22 all 
+arm-none-eabi-gcc "../Core/Src/board_params.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/board_params.d" -MT"Core/Src/board_params.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/board_params.o"
+arm-none-eabi-gcc "../Core/Src/board_specific_params.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/board_specific_params.d" -MT"Core/Src/board_specific_params.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/board_specific_params.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f7xx_it.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f7xx_it.d" -MT"Core/Src/stm32f7xx_it.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f7xx_it.o"
+arm-none-eabi-gcc "../Core/Src/sys_can_receive.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_receive.d" -MT"Core/Src/sys_can_receive.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_receive.o"
+arm-none-eabi-gcc "../Core/Src/sys_can_transmit.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_transmit.d" -MT"Core/Src/sys_can_transmit.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_transmit.o"
+In file included from ../Core/Src/board_params.c:1:
+../Core/Inc/board_params.h:17:33: error: field 'impl' has incomplete type
+   17 |         struct board_param_impl impl;
+      |                                 ^~~~
+In file included from ../Core/Inc/board_specific_params.h:9,
+                 from ../Core/Src/board_specific_params.c:1:
+../Core/Inc/board_params.h:17:33: error: field 'impl' has incomplete type
+   17 |         struct board_param_impl impl;
+      |                                 ^~~~
+In file included from ../Core/Inc/board_specific_params.h:9,
+                 from ../Core/Src/main.c:20:
+../Core/Inc/board_params.h:17:33: error: field 'impl' has incomplete type
+   17 |         struct board_param_impl impl;
+      |                                 ^~~~
+make: *** [Core/Src/subdir.mk:46: Core/Src/board_specific_params.o] Error 1
+make: *** Waiting for unfinished jobs....
+In file included from ../Core/Inc/board_specific_params.h:9,
+                 from ../Core/Src/sys_can_receive.c:1:
+../Core/Inc/board_params.h:17:33: error: field 'impl' has incomplete type
+   17 |         struct board_param_impl impl;
+      |                                 ^~~~
+make: *** [Core/Src/subdir.mk:46: Core/Src/board_params.o] Error 1
+In file included from ../Core/Inc/sys_can_transmit.h:6,
+                 from ../Core/Src/stm32f7xx_it.c:23:
+../Core/Inc/board_params.h:17:33: error: field 'impl' has incomplete type
+   17 |         struct board_param_impl impl;
+      |                                 ^~~~
+make: *** [Core/Src/subdir.mk:46: Core/Src/main.o] Error 1
+make: *** [Core/Src/subdir.mk:46: Core/Src/stm32f7xx_it.o] Error 1
+In file included from ../Core/Inc/sys_can_transmit.h:6,
+                 from ../Core/Src/sys_can_transmit.c:1:
+../Core/Inc/board_params.h:17:33: error: field 'impl' has incomplete type
+   17 |         struct board_param_impl impl;
+      |                                 ^~~~
+make: *** [Core/Src/subdir.mk:46: Core/Src/sys_can_receive.o] Error 1
+make: *** [Core/Src/subdir.mk:46: Core/Src/sys_can_transmit.o] Error 1
+"make -j22 all" terminated with exit code 2. Build might be incomplete.
+16:21:47 **** Incremental Build of configuration Debug for project Motor-Interface ****
+make -j22 all 
+arm-none-eabi-size  Motor-Interface.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Motor-Interface.elf
+Finished building: default.size.stdout
+ 
+16:21:53 **** Incremental Build of configuration Debug for project HVBPS ****
+make -j22 all 
+arm-none-eabi-gcc "../Core/Src/board_params.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/board_params.d" -MT"Core/Src/board_params.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/board_params.o"
+arm-none-eabi-gcc "../Core/Src/board_specific_params.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/board_specific_params.d" -MT"Core/Src/board_specific_params.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/board_specific_params.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f7xx_it.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f7xx_it.d" -MT"Core/Src/stm32f7xx_it.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f7xx_it.o"
+arm-none-eabi-gcc "../Core/Src/sys_can_receive.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_receive.d" -MT"Core/Src/sys_can_receive.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_receive.o"
+arm-none-eabi-gcc "../Core/Src/sys_can_transmit.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_transmit.d" -MT"Core/Src/sys_can_transmit.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_transmit.o"
+arm-none-eabi-gcc -o "HVBPS.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\corre\coding\November-Car\HVBPS\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="HVBPS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: HVBPS.elf
+ 
+arm-none-eabi-size  HVBPS.elf 
+arm-none-eabi-objdump -h -S HVBPS.elf  > "HVBPS.list"
+   text	   data	    bss	    dec	    hex	filename
+  13912	    100	   1764	  15776	   3da0	HVBPS.elf
+Finished building: default.size.stdout
+ 
+Finished building: HVBPS.list
+ 
+16:21:54 **** Incremental Build of configuration Debug for project Motor-Interface ****
+make -j22 all 
+arm-none-eabi-size  Motor-Interface.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Motor-Interface.elf
+Finished building: default.size.stdout
+ 
+16:22:09 **** Incremental Build of configuration Debug for project HVBPS ****
+make -j22 all 
+arm-none-eabi-gcc "../Core/Src/board_params.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/board_params.d" -MT"Core/Src/board_params.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/board_params.o"
+arm-none-eabi-gcc "../Core/Src/board_specific_params.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/board_specific_params.d" -MT"Core/Src/board_specific_params.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/board_specific_params.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f7xx_it.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f7xx_it.d" -MT"Core/Src/stm32f7xx_it.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f7xx_it.o"
+arm-none-eabi-gcc "../Core/Src/sys_can_receive.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_receive.d" -MT"Core/Src/sys_can_receive.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_receive.o"
+arm-none-eabi-gcc "../Core/Src/sys_can_transmit.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sys_can_transmit.d" -MT"Core/Src/sys_can_transmit.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sys_can_transmit.o"
+arm-none-eabi-gcc -o "HVBPS.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\corre\coding\November-Car\HVBPS\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="HVBPS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: HVBPS.elf
+ 
+arm-none-eabi-size  HVBPS.elf 
+arm-none-eabi-objdump -h -S HVBPS.elf  > "HVBPS.list"
+   text	   data	    bss	    dec	    hex	filename
+  13912	    100	   1764	  15776	   3da0	HVBPS.elf
+Finished building: default.size.stdout
+ 
+Finished building: HVBPS.list
+ 
+16:22:10 **** Incremental Build of configuration Debug for project Motor-Interface ****
+make -j22 all 
+arm-none-eabi-size  Motor-Interface.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     76	   1764	  15776	   3da0	Motor-Interface.elf
+Finished building: default.size.stdout
+ 

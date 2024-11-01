@@ -60,8 +60,8 @@ all: main-build
 main-build: Motor-Interface.elf secondary-outputs
 
 # Tool invocations
-Motor-Interface.elf Motor-Interface.map: $(OBJS) $(USER_OBJS) C:\Users\corre\coding\November-Car\Motor-Interface\STM32F767ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "Motor-Interface.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\corre\coding\November-Car\Motor-Interface\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Motor-Interface.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Motor-Interface.elf Motor-Interface.map: $(OBJS) $(USER_OBJS) C:\Users\corre\coding\November-Car-2\Motor-Interface\STM32F767ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "Motor-Interface.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\corre\coding\November-Car-2\Motor-Interface\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Motor-Interface.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

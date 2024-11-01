@@ -1,4 +1,4 @@
-11:51:14 **** Incremental Build of configuration Debug for project Driver-Controls ****
+22:36:04 **** Incremental Build of configuration Debug for project Driver-Controls ****
 make -j22 all 
 arm-none-eabi-size  Driver-Controls.elf 
    text	   data	    bss	    dec	    hex	filename
@@ -6,5 +6,5 @@ arm-none-eabi-size  Driver-Controls.elf
 Finished building: default.size.stdout
  
 
-11:51:14 Build Finished. 0 errors, 0 warnings. (took 335ms)
+22:36:04 Build Finished. 0 errors, 0 warnings. (took 326ms)
 
