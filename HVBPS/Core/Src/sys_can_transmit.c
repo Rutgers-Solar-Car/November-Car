@@ -2,11 +2,10 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdbool.h>
+#include "board_specific_params.h"
 
-#define CAN_ID 0x103
-
-static int num_tx_params;
-static board_param_t** tx_params;
+static int num_tx_params = TX_PARAMS;
+static board_param_t* tx_params[TX_PARAMS];
 static CAN_TxHeaderTypeDef std_header = {
 		.StdId = CAN_ID,
 		.IDE = CAN_ID_STD,
@@ -26,14 +25,6 @@ void can_tx_init(CAN_HandleTypeDef* hcan, uint32_t* mailbox, board_param_t* para
 	hcan1 = hcan;
 	TxMailbox = mailbox;
 	int index = 0;
-	for (int i = 0; i < num_params; i++) {
-		if (params[i].type == TO_SEND) {
-			index++;
-		}
-	}
-	num_tx_params = index;
-	index = 0;
-	tx_params = malloc(sizeof(board_param_t*) * num_tx_params);
 	for (int i = 0; i < num_params; i++) {
 		if (params[i].type == TO_SEND) {
 			tx_params[index] = &params[i];

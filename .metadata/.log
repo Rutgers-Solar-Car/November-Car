@@ -997,3 +997,35 @@ Project's 'Motor-Interface' active one is 'Motor-Interface.ioc' file
 
 !ENTRY org.eclipse.cdt.core 1 0 2024-11-01 19:28:37.573
 !MESSAGE Indexed 'Motor-Interface' (28 sources, 149 headers) in 2.93 sec: 15,084 declarations; 76,596 references; 2 unresolved inclusions; 42 syntax errors; 147 unresolved names (0.16%)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-11-01 19:35:47.051
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 2 1 2024-11-01 19:35:47.058
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2024-11-01 19:35:47.059
+!MESSAGE The project description file (.project) for 'HVBPS' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-11-01 19:35:47.341
+!MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2024-11-01 19:36:14.074 -----------------------------------------------
+eclipse.buildId=Version 1.16.1
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-11-01 19:36:19.031
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-11-01 19:36:25.047
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-11-01 19:36:25.050
+!MESSAGE Log4j2 initialized with config file C:\Users\corre\coding\November-Car-2\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-11-01 19:36:35.293
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-11-01 19:38:02.698
+!MESSAGE Indexed 'HVBPS' (28 sources, 118 headers) in 5.83 sec: 11,853 declarations; 70,598 references; 2 unresolved inclusions; 42 syntax errors; 147 unresolved names (0.18%)

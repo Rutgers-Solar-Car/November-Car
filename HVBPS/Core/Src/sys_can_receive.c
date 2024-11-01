@@ -1,25 +1,18 @@
+#include "board_specific_params.h"
 #include "sys_can_receive.h"
 #include "main.h"
 #include <stdlib.h>
 #include <stdbool.h>
 
 static CAN_HandleTypeDef* rx_hcan;
-static board_param_t** rx_params;
-static uint16_t num_params;
+static board_param_t* rx_params[RX_PARAMS];
+static uint16_t num_params = RX_PARAMS;
 static bool ready = false;
 
-void can_rx_init(CAN_HandleTypeDef* hcan, board_param_t* param, uint16_t num_params) {
+void can_rx_init(CAN_HandleTypeDef* hcan, board_param_t* param) {
 	rx_hcan = hcan;
 	int index = 0;
-	for (int i = 0; i < num_params; i++) {
-		if (param[i].type == TO_RECEIVE) {
-			index++;
-		}
-	}
-	num_params = index;
-	rx_params = malloc(sizeof(board_param_t*) * num_params);
-	index = 0;
-	for (int i = 0; i < num_params; i++) {
+	for (int i = 0; i < NUM_PARAMS; i++) {
 		if (param[i].type == TO_RECEIVE) {
 			rx_params[index] = &param[i];
 			index++;
@@ -39,5 +32,6 @@ void can_receive_message() {
 		param->ival = data.ival;
 		param->timestamp = HAL_GetTick();
 		param->stale = false;
+		param->has_change = true;
 	}
 }
