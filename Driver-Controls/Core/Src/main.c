@@ -17,7 +17,6 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
-#include <driver_controls_params.h>
 #include "main.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -25,7 +24,7 @@
 #include "can.h"
 #include "sys_can_transmit.h"
 #include "sys_can_receive.h"
-
+#include "board_specific_params.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -70,6 +69,7 @@ static void MX_TIM2_Init(void);
 /* USER CODE BEGIN 0 */
 void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan) {
 	can_receive_message();
+	can_handler();
 }
 /* USER CODE END 0 */
 
@@ -112,7 +112,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
   HAL_CAN_Start(&hcan1);
   can_tx_init(&hcan1, TxMailbox, hvbps_params, NUM_PARAMS);
-  can_rx_init(&hcan1, hvbps_params, NUM_PARAMS);
+  can_rx_init(&hcan1, hvbps_params);
   HAL_CAN_ActivateNotification(&hcan1, CAN_IT_RX_FIFO0_MSG_PENDING);
   /* USER CODE END 2 */
 
@@ -121,9 +121,10 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	  can_incremental_update();
-	  check_staleness(&hvbps_params, NUM_PARAMS);
+
     /* USER CODE BEGIN 3 */
+    can_incremental_update();
+    check_staleness(&hvbps_params, NUM_PARAMS);
   }
   /* USER CODE END 3 */
 }
@@ -281,24 +282,13 @@ static void MX_GPIO_Init(void)
 /* USER CODE END MX_GPIO_Init_1 */
 
   /* GPIO Ports Clock Enable */
-  __HAL_RCC_GPIOE_CLK_ENABLE();
   __HAL_RCC_GPIOC_CLK_ENABLE();
   __HAL_RCC_GPIOF_CLK_ENABLE();
   __HAL_RCC_GPIOH_CLK_ENABLE();
   __HAL_RCC_GPIOD_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(CTK_BAT_GPIO_Port, CTK_BAT_Pin, GPIO_PIN_RESET);
-
-  /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOF, LED_CAN_Pin|LED_BOARD_Pin, GPIO_PIN_RESET);
-
-  /*Configure GPIO pin : CTK_BAT_Pin */
-  GPIO_InitStruct.Pin = CTK_BAT_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(CTK_BAT_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : BTN_1_Pin */
   GPIO_InitStruct.Pin = BTN_1_Pin;
@@ -319,16 +309,7 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(BTN_2_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : SWT_1_Pin */
-  GPIO_InitStruct.Pin = SWT_1_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING_FALLING;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(SWT_1_GPIO_Port, &GPIO_InitStruct);
-
   /* EXTI interrupt init*/
-  HAL_NVIC_SetPriority(EXTI9_5_IRQn, 0, 0);
-  HAL_NVIC_EnableIRQ(EXTI9_5_IRQn);
-
   HAL_NVIC_SetPriority(EXTI15_10_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
 

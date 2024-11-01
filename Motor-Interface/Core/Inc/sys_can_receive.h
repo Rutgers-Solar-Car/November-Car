@@ -9,7 +9,7 @@
 /**
  * Initializes the receiving side of the CAN Bus
  */
-void can_rx_init(CAN_HandleTypeDef* hcan, board_param_t* params, uint16_t num_params);
+void can_rx_init(CAN_HandleTypeDef* hcan, board_param_t* params);
 
 /**
  * To be placed in the receiving callback so that it can handle what to do when a message is received

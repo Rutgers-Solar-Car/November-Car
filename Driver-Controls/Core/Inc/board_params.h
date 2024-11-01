@@ -5,7 +5,7 @@
 #include <stdbool.h>
 #include "can.h"
 
-typedef struct {
+typedef struct board_param {
 	uint16_t ID;
 	union {
 		int32_t ival;
@@ -13,15 +13,16 @@ typedef struct {
 		float fval;
 	};
 	uint8_t type;
-	bool to_send;
 	uint32_t timestamp;
-	bool check_stale;
-	bool stale;
+	char to_send;
+	char stale;
+	char check_stale;
+	char has_change;
 } board_param_t;
 
 enum {
 	TO_SEND = 0,
-	TO_RECEIVE
+	TO_RECEIVE = 1
 };
 
 can_data_t convert_message(board_param_t* param);

@@ -1,6 +1,6 @@
 "./Core/Src/board_params.o"
+"./Core/Src/board_specific_params.o"
 "./Core/Src/main.o"
-"./Core/Src/motor_interface_params.o"
 "./Core/Src/stm32f7xx_hal_msp.o"
 "./Core/Src/stm32f7xx_it.o"
 "./Core/Src/sys_can_receive.o"

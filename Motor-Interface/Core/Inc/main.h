@@ -57,8 +57,6 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define CTK_BAT_Pin GPIO_PIN_2
-#define CTK_BAT_GPIO_Port GPIOE
 #define BTN_1_Pin GPIO_PIN_13
 #define BTN_1_GPIO_Port GPIOC
 #define BTN_1_EXTI_IRQn EXTI15_10_IRQn
@@ -69,9 +67,6 @@ void Error_Handler(void);
 #define BTN_2_Pin GPIO_PIN_10
 #define BTN_2_GPIO_Port GPIOF
 #define BTN_2_EXTI_IRQn EXTI15_10_IRQn
-#define SWT_1_Pin GPIO_PIN_8
-#define SWT_1_GPIO_Port GPIOE
-#define SWT_1_EXTI_IRQn EXTI9_5_IRQn
 
 /* USER CODE BEGIN Private defines */
 

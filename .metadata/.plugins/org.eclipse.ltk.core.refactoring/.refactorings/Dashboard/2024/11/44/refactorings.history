@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Dashboard/HVBPS.ioc&apos; to &apos;Dashboard.ioc&apos;" description="Rename resource &apos;HVBPS.ioc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="HVBPS.ioc" name="Dashboard.ioc" stamp="1730503679388" updateReferences="true"/>
+</session>
