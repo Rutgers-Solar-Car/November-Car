@@ -1,16 +1,10 @@
-19:28:52 **** Build of configuration Debug for project Driver-Controls ****
+19:40:09 **** Incremental Build of configuration Debug for project Driver-Controls ****
 make -j22 all 
-arm-none-eabi-gcc -o "Driver-Controls.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\corre\coding\November-Car-2\Driver-Controls\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Driver-Controls.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Driver-Controls.elf
- 
 arm-none-eabi-size  Driver-Controls.elf 
-arm-none-eabi-objdump -h -S Driver-Controls.elf  > "Driver-Controls.list"
    text	   data	    bss	    dec	    hex	filename
   13976	     84	   1764	  15824	   3dd0	Driver-Controls.elf
 Finished building: default.size.stdout
  
-Finished building: Driver-Controls.list
- 
 
-19:28:53 Build Finished. 0 errors, 0 warnings. (took 777ms)
+19:40:09 Build Finished. 0 errors, 0 warnings. (took 342ms)
 
