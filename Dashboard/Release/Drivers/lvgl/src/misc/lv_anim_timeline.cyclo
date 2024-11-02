@@ -1,0 +1,17 @@
+../Drivers/lvgl/src/misc/lv_anim_timeline.c:298:16:anim_timeline_path_cb	1
+../Drivers/lvgl/src/misc/lv_anim_timeline.c:202:13:anim_timeline_set_act_time	39
+../Drivers/lvgl/src/misc/lv_anim_timeline.c:304:13:anim_timeline_exec_cb	1
+../Drivers/lvgl/src/misc/lv_anim_timeline.c:60:22:lv_anim_timeline_create	2
+../Drivers/lvgl/src/misc/lv_anim_timeline.c:77:6:lv_anim_timeline_add	3
+../Drivers/lvgl/src/misc/lv_anim_timeline.c:121:6:lv_anim_timeline_pause	2
+../Drivers/lvgl/src/misc/lv_anim_timeline.c:67:6:lv_anim_timeline_delete	2
+../Drivers/lvgl/src/misc/lv_anim_timeline.c:128:6:lv_anim_timeline_set_reverse	2
+../Drivers/lvgl/src/misc/lv_anim_timeline.c:134:6:lv_anim_timeline_set_repeat_count	2
+../Drivers/lvgl/src/misc/lv_anim_timeline.c:140:6:lv_anim_timeline_set_repeat_delay	2
+../Drivers/lvgl/src/misc/lv_anim_timeline.c:155:10:lv_anim_timeline_get_playtime	4
+../Drivers/lvgl/src/misc/lv_anim_timeline.c:90:10:lv_anim_timeline_start	8
+../Drivers/lvgl/src/misc/lv_anim_timeline.c:146:6:lv_anim_timeline_set_progress	2
+../Drivers/lvgl/src/misc/lv_anim_timeline.c:173:6:lv_anim_timeline_get_reverse	2
+../Drivers/lvgl/src/misc/lv_anim_timeline.c:179:10:lv_anim_timeline_get_progress	2
+../Drivers/lvgl/src/misc/lv_anim_timeline.c:186:10:lv_anim_timeline_get_repeat_count	2
+../Drivers/lvgl/src/misc/lv_anim_timeline.c:192:10:lv_anim_timeline_get_repeat_delay	2

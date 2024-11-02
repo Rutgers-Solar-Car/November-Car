@@ -1,0 +1,5 @@
+../Drivers/lvgl/src/misc/lv_tree.c:49:13:_lv_tree_node_construct	16	static
+../Drivers/lvgl/src/misc/lv_tree.c:113:13:_lv_tree_node_destructor_cb	8	static
+../Drivers/lvgl/src/misc/lv_tree.c:105:18:lv_tree_node_create	24	static
+../Drivers/lvgl/src/misc/lv_tree.c:141:6:lv_tree_walk	40	static
+../Drivers/lvgl/src/misc/lv_tree.c:125:6:lv_tree_node_delete	24	static

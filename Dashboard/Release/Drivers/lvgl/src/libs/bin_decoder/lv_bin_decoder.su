@@ -1,0 +1,10 @@
+../Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c:115:13:lv_bin_decoder_info	24	static
+../Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c:1065:20:fs_read_file_at	24	static
+../Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c:542:13:free_decoder_data	16	static
+../Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c:370:6:lv_bin_decoder_close	16	static
+../Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c:525:25:get_decoder_data	8	static
+../Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c:559:20:decode_indexed.constprop	48	static
+../Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c:828:20:decode_alpha_only.constprop	56	static
+../Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c:181:13:lv_bin_decoder_open	56	static
+../Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c:383:13:lv_bin_decoder_get_area	64	static
+../Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c:96:6:lv_bin_decoder_init	8	static

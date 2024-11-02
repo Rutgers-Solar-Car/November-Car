@@ -1,0 +1,4 @@
+../Drivers/lvgl/src/osal/lv_os.c:39:6:lv_os_init	0	static
+../Drivers/lvgl/src/osal/lv_os.c:46:6:lv_lock	0	static
+../Drivers/lvgl/src/osal/lv_os.c:53:13:lv_lock_isr	0	static
+../Drivers/lvgl/src/osal/lv_os.c:62:6:lv_unlock	0	static

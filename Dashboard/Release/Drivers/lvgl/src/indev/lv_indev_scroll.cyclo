@@ -1,0 +1,8 @@
+../Drivers/lvgl/src/indev/lv_indev_scroll.c:571:16:find_snap_point_y	12
+../Drivers/lvgl/src/indev/lv_indev_scroll.c:515:16:find_snap_point_x	12
+../Drivers/lvgl/src/indev/lv_indev_scroll.c:640:16:elastic_diff	22
+../Drivers/lvgl/src/indev/lv_indev_scroll.c:228:9:lv_indev_scroll_throw_predict	5
+../Drivers/lvgl/src/indev/lv_indev_scroll.c:116:6:lv_indev_scroll_throw_handler	33
+../Drivers/lvgl/src/indev/lv_indev_scroll.c:253:6:lv_indev_scroll_get_snap_dist	1
+../Drivers/lvgl/src/indev/lv_indev_scroll.c:259:12:lv_indev_find_scroll_obj	46
+../Drivers/lvgl/src/indev/lv_indev_scroll.c:47:6:lv_indev_scroll_handler	33

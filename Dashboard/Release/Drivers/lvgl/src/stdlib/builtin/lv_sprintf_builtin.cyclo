@@ -1,0 +1,8 @@
+../Drivers/lvgl/src/stdlib/builtin/lv_sprintf_builtin.c:130:20:_out_buffer	2
+../Drivers/lvgl/src/stdlib/builtin/lv_sprintf_builtin.c:138:20:_out_null	1
+../Drivers/lvgl/src/stdlib/builtin/lv_sprintf_builtin.c:202:15:_ntoa_format	34
+../Drivers/lvgl/src/stdlib/builtin/lv_sprintf_builtin.c:256:15:_ntoa_long	7
+../Drivers/lvgl/src/stdlib/builtin/lv_sprintf_builtin.c:281:15:_ntoa_long_long	7
+../Drivers/lvgl/src/stdlib/builtin/lv_sprintf_builtin.c:555:12:lv_vsnprintf_inner	68
+../Drivers/lvgl/src/stdlib/builtin/lv_sprintf_builtin.c:872:5:lv_snprintf	1
+../Drivers/lvgl/src/stdlib/builtin/lv_sprintf_builtin.c:881:5:lv_vsnprintf	1
