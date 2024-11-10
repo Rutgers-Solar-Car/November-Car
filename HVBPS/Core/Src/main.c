@@ -51,8 +51,6 @@ TIM_HandleTypeDef htim2;
 
 board_param_t* hvbps_params;
 
-uint32_t TxMailbox;
-
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -69,26 +67,12 @@ static void MX_TIM2_Init(void);
 /* USER CODE BEGIN 0 */
 void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan) {
 	can_receive_message();
-	can_handler();
+	param_handler();
 }
 
 void HAL_GPIO_EXTI_Callback(uint16_t pin) {
-	static bool state = false;
-	if (pin == BTN_1_Pin) {
-		state = !state;
-		CAN_TxHeaderTypeDef header;
-		header.StdId = 0x103;
-		header.DLC = 8;
-		header.RTR = CAN_RTR_DATA;
-		header.IDE = CAN_ID_STD;
-		can_data_t message;
-		message.ID = 0;
-		message.bval = state;
-		for (int i = 0; i < 100; i++) {
-			if (HAL_CAN_AddTxMessage(&hcan1, &header, message.data, &TxMailbox) == HAL_OK) break;
-		}
-		HAL_GPIO_TogglePin(LED_CAN_GPIO_Port, LED_CAN_Pin);
-	}
+
+
 }
 /* USER CODE END 0 */
 
@@ -130,7 +114,7 @@ int main(void)
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
   HAL_CAN_Start(&hcan1);
-  can_tx_init(&hcan1, TxMailbox, hvbps_params, NUM_PARAMS);
+  can_tx_init(&hcan1, hvbps_params);
   can_rx_init(&hcan1, hvbps_params);
   HAL_CAN_ActivateNotification(&hcan1, CAN_IT_RX_FIFO0_MSG_PENDING);
   /* USER CODE END 2 */
@@ -142,7 +126,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-//	  can_incremental_update();
+	can_incremental_update();
 //	  check_staleness(&hvbps_params, NUM_PARAMS);
   }
   /* USER CODE END 3 */
@@ -301,13 +285,24 @@ static void MX_GPIO_Init(void)
 /* USER CODE END MX_GPIO_Init_1 */
 
   /* GPIO Ports Clock Enable */
+  __HAL_RCC_GPIOE_CLK_ENABLE();
   __HAL_RCC_GPIOC_CLK_ENABLE();
   __HAL_RCC_GPIOF_CLK_ENABLE();
   __HAL_RCC_GPIOH_CLK_ENABLE();
   __HAL_RCC_GPIOD_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOE, CON_BAT_G_Pin|CON_SC_G_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOF, LED_CAN_Pin|LED_BOARD_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pins : CON_BAT_G_Pin CON_SC_G_Pin */
+  GPIO_InitStruct.Pin = CON_BAT_G_Pin|CON_SC_G_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);
 
   /*Configure GPIO pin : BTN_1_Pin */
   GPIO_InitStruct.Pin = BTN_1_Pin;

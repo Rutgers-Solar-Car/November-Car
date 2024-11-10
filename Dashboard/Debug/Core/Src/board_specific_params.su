@@ -1,3 +1,3 @@
-../Core/Src/board_specific_params.c:8:16:get_params	4	static
-../Core/Src/board_specific_params.c:14:13:impl_param_handler	16	static
-../Core/Src/board_specific_params.c:28:6:can_handler	16	static
+../Core/Src/board_specific_params.c:28:16:get_params	4	static
+../Core/Src/board_specific_params.c:34:13:impl_param_handler	128	static
+../Core/Src/board_specific_params.c:91:6:param_handler	16	static

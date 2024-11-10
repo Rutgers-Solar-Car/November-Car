@@ -7,18 +7,19 @@
 ///
 
 #include "board_params.h"
-#define NUM_PARAMS 2
+#define NUM_PARAMS 3
 #define TX_PARAMS 1
-#define RX_PARAMS 1
+#define RX_PARAMS 2
 #define CAN_ID 0x103
 
 board_param_t* get_params();
 
-void can_handler();
+void param_handler();
 
 enum {
-	STATUS_LED = 0,
-	ALIVE = 1
+	Con_Batt = 0,
+	Con_Motor = 1,
+	Dummy = 2
 };
 
 #endif

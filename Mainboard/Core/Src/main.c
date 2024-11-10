@@ -49,9 +49,7 @@ TIM_HandleTypeDef htim2;
 
 /* USER CODE BEGIN PV */
 
-board_param_t* hvbps_params;
-
-uint32_t* TxMailbox;
+board_param_t* dashboard_params;
 
 /* USER CODE END PV */
 
@@ -69,7 +67,26 @@ static void MX_TIM2_Init(void);
 /* USER CODE BEGIN 0 */
 void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan) {
 	can_receive_message();
-	can_handler();
+	param_handler();
+}
+
+void HAL_GPIO_EXTI_Callback(uint16_t pin) {
+	switch (pin) {
+
+	case SW_CON_BATT_Pin:
+		dashboard_params[Con_Batt].bval = HAL_GPIO_ReadPin(SW_CON_BATT_GPIO_Port, SW_CON_BATT_Pin);
+		dashboard_params[Con_Batt].has_change = true;
+	break;
+
+	case SW_CON_MOT_Pin:
+		dashboard_params[Con_Motor].bval = HAL_GPIO_ReadPin(SW_CON_MOT_GPIO_Port, SW_CON_MOT_Pin);
+		dashboard_params[Con_Batt].has_change = true;
+	break;
+	default:
+		//no-op
+	break;
+	}
+	param_handler();
 }
 /* USER CODE END 0 */
 
@@ -82,7 +99,7 @@ int main(void)
 
   /* USER CODE BEGIN 1 */
 
-  hvbps_params = get_params();
+  dashboard_params = get_params();
 
   /* USER CODE END 1 */
 
@@ -111,8 +128,8 @@ int main(void)
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
   HAL_CAN_Start(&hcan1);
-  can_tx_init(&hcan1, TxMailbox, hvbps_params, NUM_PARAMS);
-  can_rx_init(&hcan1, hvbps_params);
+  can_tx_init(&hcan1, dashboard_params);
+  can_rx_init(&hcan1, dashboard_params);
   HAL_CAN_ActivateNotification(&hcan1, CAN_IT_RX_FIFO0_MSG_PENDING);
   /* USER CODE END 2 */
 
@@ -124,7 +141,6 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
     can_incremental_update();
-    check_staleness(&hvbps_params, NUM_PARAMS);
   }
   /* USER CODE END 3 */
 }
@@ -285,6 +301,7 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOC_CLK_ENABLE();
   __HAL_RCC_GPIOF_CLK_ENABLE();
   __HAL_RCC_GPIOH_CLK_ENABLE();
+  __HAL_RCC_GPIOE_CLK_ENABLE();
   __HAL_RCC_GPIOD_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
@@ -309,7 +326,22 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(BTN_2_GPIO_Port, &GPIO_InitStruct);
 
+  /*Configure GPIO pin : SW_CON_MOT_Pin */
+  GPIO_InitStruct.Pin = SW_CON_MOT_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(SW_CON_MOT_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : SW_CON_BATT_Pin */
+  GPIO_InitStruct.Pin = SW_CON_BATT_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(SW_CON_BATT_GPIO_Port, &GPIO_InitStruct);
+
   /* EXTI interrupt init*/
+  HAL_NVIC_SetPriority(EXTI9_5_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(EXTI9_5_IRQn);
+
   HAL_NVIC_SetPriority(EXTI15_10_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
 

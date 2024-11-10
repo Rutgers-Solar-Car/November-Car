@@ -8,7 +8,7 @@
 /*
  * inits transmit params to be empty
  */
-void can_tx_init(CAN_HandleTypeDef* hcan, uint32_t* mailbox, board_param_t* params, uint16_t num_params);
+void can_tx_init(CAN_HandleTypeDef* hcan, board_param_t* params);
 
 /**
  * Checks which params have changed and updates them

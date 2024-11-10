@@ -58,6 +58,7 @@ DMA2D_HandleTypeDef hdma2d;
 
 LTDC_HandleTypeDef hltdc;
 
+TIM_HandleTypeDef htim2;
 TIM_HandleTypeDef htim12;
 
 UART_HandleTypeDef huart3;
@@ -65,7 +66,6 @@ UART_HandleTypeDef huart3;
 /* USER CODE BEGIN PV */
 
 board_param_t* dashboard_parameters;
-uint32_t TxMailbox;
 
 /* USER CODE END PV */
 
@@ -78,25 +78,17 @@ static void MX_LTDC_Init(void);
 static void MX_DMA2D_Init(void);
 static void MX_TIM12_Init(void);
 static void MX_ADC1_Init(void);
+static void MX_TIM2_Init(void);
 /* USER CODE BEGIN PFP */
 
-static can_data_t message;
-
-static bool state = false;
 
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan) {
-//	can_receive_message();
-//	can_handler();
-	static CAN_RxHeaderTypeDef rx_header;
-	HAL_CAN_GetRxMessage(&hcan1, CAN_RX_FIFO0, &rx_header, message.data);
-	static char buff[50];
-	state = !state;
-	sprintf(buff, "Button Toggled: %s", state ? "TRUE" : "FALSE");
-	lv_label_set_text(ui_ExampleRed, buff);
+	can_receive_message();
+	param_handler();
 }
 /* USER CODE END 0 */
 
@@ -108,7 +100,7 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-
+  dashboard_parameters = get_params();
   /* USER CODE END 1 */
 
   /* Enable the CPU Cache */
@@ -140,10 +132,11 @@ int main(void)
   MX_DMA2D_Init();
   MX_TIM12_Init();
   MX_ADC1_Init();
+  MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
   HAL_CAN_Start(&hcan1);
-//  can_tx_init(&hcan1, &TxMailbox, dashboard_parameters, NUM_PARAMS);
-//  can_rx_init(&hcan1, dashboard_parameters);
+  can_tx_init(&hcan1, dashboard_parameters);
+  can_rx_init(&hcan1, dashboard_parameters);
   HAL_CAN_ActivateNotification(&hcan1, CAN_IT_RX_FIFO0_MSG_PENDING);
 
   // prepare temp sensor - define variable to be updated in main, start and calibrate adc with vrefint
@@ -160,12 +153,6 @@ int main(void)
   _ui_screen_change(&ui_Screen_Loading, LV_SCR_LOAD_ANIM_FADE_ON, 500, 1000, ui_Screen_Loading_screen_init);
   _ui_screen_change(&ui_Screen_Main, LV_SCR_LOAD_ANIM_FADE_ON, 100, 5000, ui_Screen_Main_screen_init);
 
-  //lv_label_set_text(ui_ExampleRed, "This text has been changed!");
-
-  char buff[100];
-  int data = 5;
-  sprintf(buff, "new stuff %d", data);
-  lv_label_set_text(ui_ExampleRed, buff);
 
   /* USER CODE END 2 */
 
@@ -176,13 +163,9 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	// get temp sensor data
-//	  HAL_ADC_PollForConversion(&hadc1, 100);
-//	  adc_data = HAL_ADC_GetValue(&hadc1);
-//	  temp = ((adc_data - 760) * 100) / 16;
 
 	lv_task_handler();  // to be added
-//    can_incremental_update();
+    can_incremental_update();
   }
   /* USER CODE END 3 */
 }
@@ -443,6 +426,51 @@ static void MX_LTDC_Init(void)
   /* USER CODE BEGIN LTDC_Init 2 */
 
   /* USER CODE END LTDC_Init 2 */
+
+}
+
+/**
+  * @brief TIM2 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_TIM2_Init(void)
+{
+
+  /* USER CODE BEGIN TIM2_Init 0 */
+
+  /* USER CODE END TIM2_Init 0 */
+
+  TIM_ClockConfigTypeDef sClockSourceConfig = {0};
+  TIM_MasterConfigTypeDef sMasterConfig = {0};
+
+  /* USER CODE BEGIN TIM2_Init 1 */
+
+  /* USER CODE END TIM2_Init 1 */
+  htim2.Instance = TIM2;
+  htim2.Init.Prescaler = 216;
+  htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim2.Init.Period = 1000000;
+  htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+  htim2.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  if (HAL_TIM_Base_Init(&htim2) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+  if (HAL_TIM_ConfigClockSource(&htim2, &sClockSourceConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+  if (HAL_TIMEx_MasterConfigSynchronization(&htim2, &sMasterConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN TIM2_Init 2 */
+
+  /* USER CODE END TIM2_Init 2 */
 
 }
 

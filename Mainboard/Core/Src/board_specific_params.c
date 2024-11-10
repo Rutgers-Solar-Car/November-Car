@@ -1,18 +1,28 @@
 #include <board_specific_params.h>
 #include "main.h"
 
-static board_param_t hvbps_parameters[];
+#define CON_BATT_ID 1
+#define CON_MOTOR_ID 2
+#define DUMMY_PARAM_ID 3
+
+static board_param_t mainboard_parameters[];
 
 board_param_t* get_params() {
 
-	return hvbps_parameters;
+	return mainboard_parameters;
 
 };
 
 static void impl_param_handler(board_param_t* param) {
 	switch (param->ID) {
-	case STATUS_LED:
-		HAL_GPIO_WritePin(LED_BOARD_GPIO_Port, LED_BOARD_Pin, param->bval);
+
+	case DUMMY_PARAM_ID:
+		HAL_GPIO_TogglePin(LED_CAN_GPIO_Port, LED_CAN_Pin);
+	break;
+
+	case CON_BATT_ID:
+	case CON_MOTOR_ID:
+		param->to_send = true;
 	break;
 
 	default:
@@ -21,33 +31,43 @@ static void impl_param_handler(board_param_t* param) {
 	}
 }
 
-void can_handler() {
+void param_handler() {
 	for (int i = 0; i < NUM_PARAMS; i++) {
-		if (!hvbps_parameters[i].has_change) {
+		if (!mainboard_parameters[i].has_change) {
 			continue;
 		}
-		impl_param_handler(&hvbps_parameters[i]);
-		hvbps_parameters[i].stale = false;
-		hvbps_parameters[i].timestamp = HAL_GetTick();
-		hvbps_parameters[i].has_change = false;
+		impl_param_handler(&mainboard_parameters[i]);
+		mainboard_parameters[i].has_change = false;
 	}
 }
 
-static board_param_t hvbps_parameters[2] = {
+static board_param_t mainboard_parameters[3] = {
 		{
-			.ID = STATUS_LED,
-			.ival = 0,
-			.type = TO_RECEIVE,
-			.to_send = false,
-			.timestamp = 0
-		},
-		{
-			.ID = ALIVE,
+			.ID = CON_BATT_ID,
 			.ival = 0,
 			.type = TO_SEND,
 			.to_send = false,
 			.timestamp = 0,
-			.check_stale = false
+			.check_stale = false,
+			.has_change = false
+		},
+		{
+			.ID = CON_MOTOR_ID,
+			.ival = 0,
+			.type = TO_SEND,
+			.to_send = false,
+			.timestamp = 0,
+			.check_stale = false,
+			.has_change = false
+		},
+		{
+			.ID = Dummy_Param,
+			.ival = 0,
+			.type = TO_RECEIVE,
+			.to_send = false,
+			.check_stale = false,
+			.timestamp = 0,
+			.has_change = false
 		}
 
 	};

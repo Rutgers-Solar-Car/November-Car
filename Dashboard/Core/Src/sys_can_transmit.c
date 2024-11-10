@@ -13,19 +13,18 @@ static CAN_TxHeaderTypeDef std_header = {
 		.DLC = 8,
 		.TransmitGlobalTime = DISABLE
 };
-static uint32_t* TxMailbox;
+static uint32_t TxMailbox;
 static CAN_HandleTypeDef* hcan1;
 static bool ready = false;
 
 static HAL_StatusTypeDef send_can_message(board_param_t* param) {
-	return HAL_CAN_AddTxMessage(hcan1, &std_header, convert_message(param).data, TxMailbox);
+	return HAL_CAN_AddTxMessage(hcan1, &std_header, convert_message(param).data, &TxMailbox);
 }
 
-void can_tx_init(CAN_HandleTypeDef* hcan, uint32_t* mailbox, board_param_t* params, uint16_t num_params) {
+void can_tx_init(CAN_HandleTypeDef* hcan, board_param_t* params) {
 	hcan1 = hcan;
-	TxMailbox = mailbox;
 	int index = 0;
-	for (int i = 0; i < num_params; i++) {
+	for (int i = 0; i < NUM_PARAMS; i++) {
 		if (params[i].type == TO_SEND) {
 			tx_params[index] = &params[i];
 			index++;
