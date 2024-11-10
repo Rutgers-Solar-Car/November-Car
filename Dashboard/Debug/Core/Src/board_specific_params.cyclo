@@ -1,0 +1,3 @@
+../Core/Src/board_specific_params.c:8:16:get_params	1
+../Core/Src/board_specific_params.c:14:13:impl_param_handler	2
+../Core/Src/board_specific_params.c:28:6:can_handler	3

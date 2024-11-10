@@ -1,0 +1,8 @@
+../Drivers/lvgl/src/extra/themes/basic/../../../../src/hal/../draw/../misc/lv_color.h:594:26:lv_color_make	1
+../Drivers/lvgl/src/extra/themes/basic/../../../../src/hal/../draw/../misc/lv_color.h:695:26:lv_color_white	1
+../Drivers/lvgl/src/extra/themes/basic/../../../../src/hal/../draw/../misc/lv_style.h:529:20:lv_style_set_pad_all	1
+../Drivers/lvgl/src/extra/themes/basic/lv_theme_basic.c:67:13:style_init	1
+../Drivers/lvgl/src/extra/themes/basic/lv_theme_basic.c:135:6:lv_theme_basic_is_inited	1
+../Drivers/lvgl/src/extra/themes/basic/lv_theme_basic.c:140:14:lv_theme_basic_init	4
+../Drivers/lvgl/src/extra/themes/basic/lv_theme_basic.c:169:13:theme_apply	38
+../Drivers/lvgl/src/extra/themes/basic/lv_theme_basic.c:414:13:style_init_reset	2

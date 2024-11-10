@@ -1,0 +1,14 @@
+../Drivers/lvgl/src/draw/sw/../../misc/lv_area.h:110:20:lv_area_copy	16	static
+../Drivers/lvgl/src/draw/sw/../../misc/lv_area.h:123:26:lv_area_get_width	16	static
+../Drivers/lvgl/src/draw/sw/../../misc/lv_area.h:133:26:lv_area_get_height	16	static
+../Drivers/lvgl/src/draw/sw/lv_draw_sw_rect.c:67:6:lv_draw_sw_rect	24	static
+../Drivers/lvgl/src/draw/sw/lv_draw_sw_rect.c:83:6:lv_draw_sw_bg	24	static
+../Drivers/lvgl/src/draw/sw/lv_draw_sw_rect.c:97:13:draw_bg	160	static
+../Drivers/lvgl/src/draw/sw/lv_draw_sw_rect.c:324:13:draw_bg_img	152	static
+../Drivers/lvgl/src/draw/sw/lv_draw_sw_rect.c:398:13:draw_border	72	static
+../Drivers/lvgl/src/draw/sw/lv_draw_sw_rect.c:427:35:draw_shadow	216	static
+../Drivers/lvgl/src/draw/sw/lv_draw_sw_rect.c:945:35:shadow_draw_corner_buf	128	static
+../Drivers/lvgl/src/draw/sw/lv_draw_sw_rect.c:1032:35:shadow_blur_corner	80	static
+../Drivers/lvgl/src/draw/sw/lv_draw_sw_rect.c:1106:13:draw_outline	88	static
+../Drivers/lvgl/src/draw/sw/lv_draw_sw_rect.c:1146:6:draw_border_generic	168	static
+../Drivers/lvgl/src/draw/sw/lv_draw_sw_rect.c:1378:13:draw_border_simple	64	static

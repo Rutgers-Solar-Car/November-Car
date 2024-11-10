@@ -1,27 +1,10 @@
-21:27:31 **** Incremental Build of configuration Debug for project HVBPS ****
+13:49:43 **** Incremental Build of configuration Debug for project HVBPS ****
 make -j22 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:133:23: warning: passing argument 2 of 'can_tx_init' makes pointer from integer without a cast [-Wint-conversion]
-  133 |   can_tx_init(&hcan1, TxMailbox, hvbps_params, NUM_PARAMS);
-      |                       ^~~~~~~~~
-      |                       |
-      |                       uint32_t {aka long unsigned int}
-In file included from ../Core/Src/main.c:25:
-../Core/Inc/sys_can_transmit.h:11:53: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'uint32_t' {aka 'long unsigned int'}
-   11 | void can_tx_init(CAN_HandleTypeDef* hcan, uint32_t* mailbox, board_param_t* params, uint16_t num_params);
-      |                                           ~~~~~~~~~~^~~~~~~
-arm-none-eabi-gcc -o "HVBPS.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\corre\coding\November-Car-2\HVBPS\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="HVBPS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: HVBPS.elf
- 
 arm-none-eabi-size  HVBPS.elf 
-arm-none-eabi-objdump -h -S HVBPS.elf  > "HVBPS.list"
    text	   data	    bss	    dec	    hex	filename
   13808	     60	   1764	  15632	   3d10	HVBPS.elf
 Finished building: default.size.stdout
  
-Finished building: HVBPS.list
- 
 
-21:27:32 Build Finished. 0 errors, 1 warnings. (took 1s.341ms)
+13:49:43 Build Finished. 0 errors, 0 warnings. (took 807ms)
 

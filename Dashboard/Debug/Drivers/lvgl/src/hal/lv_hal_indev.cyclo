@@ -1,0 +1,6 @@
+../Drivers/lvgl/src/hal/lv_hal_indev.c:57:6:lv_indev_drv_init	1
+../Drivers/lvgl/src/hal/lv_hal_indev.c:76:14:lv_indev_drv_register	5
+../Drivers/lvgl/src/hal/lv_hal_indev.c:106:6:lv_indev_drv_update	7
+../Drivers/lvgl/src/hal/lv_hal_indev.c:133:6:lv_indev_delete	4
+../Drivers/lvgl/src/hal/lv_hal_indev.c:152:14:lv_indev_get_next	2
+../Drivers/lvgl/src/hal/lv_hal_indev.c:165:6:_lv_indev_read	5

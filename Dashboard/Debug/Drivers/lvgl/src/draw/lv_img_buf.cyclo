@@ -1,0 +1,13 @@
+../Drivers/lvgl/src/draw/../misc/lv_mem.h:193:44:lv_memcpy_small	2
+../Drivers/lvgl/src/draw/../misc/lv_color.h:374:24:lv_color_to32	1
+../Drivers/lvgl/src/draw/../misc/lv_color.h:594:26:lv_color_make	1
+../Drivers/lvgl/src/draw/../misc/lv_color.h:699:26:lv_color_black	1
+../Drivers/lvgl/src/draw/lv_img_buf.c:41:12:lv_img_buf_get_px_color	13
+../Drivers/lvgl/src/draw/lv_img_buf.c:100:10:lv_img_buf_get_px_alpha	7
+../Drivers/lvgl/src/draw/lv_img_buf.c:155:6:lv_img_buf_set_px_alpha	6
+../Drivers/lvgl/src/draw/lv_img_buf.c:206:6:lv_img_buf_set_px_color	8
+../Drivers/lvgl/src/draw/lv_img_buf.c:265:6:lv_img_buf_set_palette	8
+../Drivers/lvgl/src/draw/lv_img_buf.c:279:16:lv_img_buf_alloc	4
+../Drivers/lvgl/src/draw/lv_img_buf.c:311:6:lv_img_buf_free	3
+../Drivers/lvgl/src/draw/lv_img_buf.c:321:10:lv_img_buf_get_img_size	18
+../Drivers/lvgl/src/draw/lv_img_buf.c:352:6:_lv_img_buf_get_transformed_area	3

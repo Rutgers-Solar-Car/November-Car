@@ -1,0 +1,4 @@
+C:/Users/corre/coding/November-Car-2/Dashboard/Drivers/lvgl/src/hal/../draw/../misc/../font/../misc/lv_area.h:294:26:lv_pct	16	static
+C:/Users/corre/coding/November-Car-2/Dashboard/Drivers/lvgl/src/hal/../draw/../misc/lv_color.h:599:26:lv_color_hex	24	static
+C:/Users/corre/coding/November-Car-2/Dashboard/Drivers/lvgl/src/core/lv_obj_style.h:92:20:lv_obj_remove_style_all	16	static
+../Drivers/UI/screens/ui_Screen_Main.c:8:6:ui_Screen_Main_screen_init	16	static

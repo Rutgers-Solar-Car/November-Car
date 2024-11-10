@@ -1,0 +1,6 @@
+../Core/Src/LCDController.c:61:6:lv_port_disp_init	1
+../Core/Src/LCDController.c:158:13:disp_init	1
+../Core/Src/LCDController.c:167:6:disp_enable_update	1
+../Core/Src/LCDController.c:174:6:disp_disable_update	1
+../Core/Src/LCDController.c:182:13:disp_flush	1
+../Core/Src/LCDController.c:218:6:dma2d_done	1

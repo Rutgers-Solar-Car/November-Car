@@ -1,0 +1,8 @@
+C:/Users/corre/coding/November-Car-2/Dashboard/Drivers/lvgl/src/hal/../draw/../misc/lv_color.h:599:26:lv_color_hex	1
+../Drivers/UI/ui_theme_manager.c:12:13:ui_object_set_local_style_property	3
+../Drivers/UI/ui_theme_manager.c:20:6:ui_object_set_themeable_style_property	6
+../Drivers/UI/ui_theme_manager.c:36:6:_ui_theme_set_variable_styles	10
+../Drivers/UI/ui_theme_manager.c:70:21:ui_get_theme_value	1
+../Drivers/UI/ui_theme_manager.c:75:18:_ui_style_value_convert	18
+../Drivers/UI/ui_theme_manager.c:93:20:_ui_local_style_create	5
+../Drivers/UI/ui_theme_manager.c:118:37:_ui_local_style_property_setting_create	14
