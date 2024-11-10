@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;Driver-Controls/HVBPS.ioc&apos; to &apos;Driver-Controls.ioc&apos;" description="Rename resource &apos;HVBPS.ioc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="HVBPS.ioc" name="Driver-Controls.ioc" stamp="1730503704315" updateReferences="true"/>
-</session>
