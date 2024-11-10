@@ -1,6 +1,0 @@
-../Drivers/lvgl/src/themes/mono/lv_theme_mono.c:232:13:theme_apply	48	static
-../Drivers/lvgl/src/themes/mono/../../../../lvgl/../lvgl/src/core/../../../lvgl/src/misc/lv_style.h:564:20:lv_style_set_pad_all	16	static
-../Drivers/lvgl/src/themes/mono/lv_theme_mono.c:183:6:lv_theme_mono_is_inited	0	static
-../Drivers/lvgl/src/themes/mono/lv_theme_mono.c:522:13:style_init_reset	8	static
-../Drivers/lvgl/src/themes/mono/lv_theme_mono.c:190:6:lv_theme_mono_deinit	16	static
-../Drivers/lvgl/src/themes/mono/lv_theme_mono.c:206:14:lv_theme_mono_init	104	static

@@ -1,9 +1,0 @@
-../Drivers/lvgl/src/widgets/switch/lv_switch.c:283:13:lv_switch_anim_completed	1
-../Drivers/lvgl/src/widgets/switch/lv_switch.c:273:13:lv_switch_anim_exec_cb	1
-../Drivers/lvgl/src/widgets/switch/lv_switch.c:130:13:lv_switch_destructor	1
-../Drivers/lvgl/src/widgets/switch/lv_switch.c:113:13:lv_switch_constructor	1
-../Drivers/lvgl/src/widgets/switch/lv_switch.c:175:13:draw_main	10
-../Drivers/lvgl/src/widgets/switch/lv_switch.c:138:13:lv_switch_event	8
-../Drivers/lvgl/src/widgets/switch/lv_switch.c:76:12:lv_switch_create	1
-../Drivers/lvgl/src/widgets/switch/lv_switch.c:88:6:lv_switch_set_orientation	1
-../Drivers/lvgl/src/widgets/switch/lv_switch.c:101:25:lv_switch_get_orientation	1

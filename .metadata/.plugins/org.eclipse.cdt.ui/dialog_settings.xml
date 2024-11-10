@@ -31,4 +31,11 @@
 		<item key="width" value="745"/>
 		<item key="height" value="1090"/>
 	</section>
+	<section name="OptionalMessageDialog.hide.">
+		<item key="askReindex.detail" value="0"/>
+	</section>
+	<section name="RenameInformationPopup">
+	</section>
+	<section name="CRenameRefactoringInputPage">
+	</section>
 </section>

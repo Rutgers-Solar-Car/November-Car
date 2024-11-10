@@ -51,7 +51,7 @@ TIM_HandleTypeDef htim2;
 
 board_param_t* hvbps_params;
 
-uint32_t* TxMailbox;
+uint32_t TxMailbox;
 
 /* USER CODE END PV */
 
@@ -70,6 +70,25 @@ static void MX_TIM2_Init(void);
 void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan) {
 	can_receive_message();
 	can_handler();
+}
+
+void HAL_GPIO_EXTI_Callback(uint16_t pin) {
+	static bool state = false;
+	if (pin == BTN_1_Pin) {
+		state = !state;
+		CAN_TxHeaderTypeDef header;
+		header.StdId = 0x103;
+		header.DLC = 8;
+		header.RTR = CAN_RTR_DATA;
+		header.IDE = CAN_ID_STD;
+		can_data_t message;
+		message.ID = 0;
+		message.bval = state;
+		for (int i = 0; i < 100; i++) {
+			if (HAL_CAN_AddTxMessage(&hcan1, &header, message.data, &TxMailbox) == HAL_OK) break;
+		}
+		HAL_GPIO_TogglePin(LED_CAN_GPIO_Port, LED_CAN_Pin);
+	}
 }
 /* USER CODE END 0 */
 
@@ -123,8 +142,8 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    can_incremental_update();
-    check_staleness(&hvbps_params, NUM_PARAMS);
+//	  can_incremental_update();
+//	  check_staleness(&hvbps_params, NUM_PARAMS);
   }
   /* USER CODE END 3 */
 }

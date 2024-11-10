@@ -1,7 +1,0 @@
-../Drivers/lvgl/src/font/lv_font.c:46:14:lv_font_get_glyph_bitmap	0	static
-../Drivers/lvgl/src/font/lv_font.c:53:6:lv_font_glyph_release_draw_data	0	static
-../Drivers/lvgl/src/font/lv_font.c:62:6:lv_font_get_glyph_dsc	32	static
-../Drivers/lvgl/src/font/lv_font.c:120:10:lv_font_get_glyph_width	32	static
-../Drivers/lvgl/src/font/lv_font.c:132:6:lv_font_set_kerning	0	static
-../Drivers/lvgl/src/font/lv_font.c:138:9:lv_font_get_line_height	0	static
-../Drivers/lvgl/src/font/lv_font.c:143:19:lv_font_default	0	static

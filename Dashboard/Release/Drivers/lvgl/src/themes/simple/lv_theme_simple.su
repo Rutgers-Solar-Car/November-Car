@@ -1,6 +1,0 @@
-../Drivers/lvgl/src/themes/simple/lv_theme_simple.c:205:13:theme_apply	24	static
-../Drivers/lvgl/src/themes/simple/lv_theme_simple.c:145:6:lv_theme_simple_is_inited	0	static
-../Drivers/lvgl/src/themes/simple/lv_theme_simple.c:428:13:style_init_reset	8	static
-../Drivers/lvgl/src/themes/simple/lv_theme_simple.c:152:14:lv_theme_simple_get	8	static
-../Drivers/lvgl/src/themes/simple/lv_theme_simple.c:161:6:lv_theme_simple_deinit	16	static
-../Drivers/lvgl/src/themes/simple/lv_theme_simple.c:177:14:lv_theme_simple_init	88	static

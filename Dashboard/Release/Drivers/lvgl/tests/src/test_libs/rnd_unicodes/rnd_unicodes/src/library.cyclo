@@ -1,2 +1,0 @@
-../Drivers/lvgl/tests/src/test_libs/rnd_unicodes/rnd_unicodes/src/library.c:28:32:RANDOM_CALL_PROCESS	1
-../Drivers/lvgl/tests/src/test_libs/rnd_unicodes/rnd_unicodes/src/library.c:141:5:random_utf8_chars	13

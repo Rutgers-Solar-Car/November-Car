@@ -42,8 +42,8 @@ static board_param_t hvbps_parameters[2] = {
 			.timestamp = 0
 		},
 		{
-			.ID = ALIVE,
-			.ival = 0,
+			.ID = 0,
+			.bval = false,
 			.type = TO_SEND,
 			.to_send = false,
 			.timestamp = 0,

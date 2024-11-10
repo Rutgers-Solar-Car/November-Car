@@ -17,8 +17,8 @@ board_param_t* get_params();
 void can_handler();
 
 enum {
-	STATUS_LED = 1,
-	ALIVE = 2
+	STATUS_LED = 0,
+	ALIVE = 1
 };
 
 #endif
