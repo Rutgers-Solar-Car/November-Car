@@ -29,9 +29,14 @@ void can_receive_message() {
 	for (int i = 0; i < num_params; i++) {
 		if (rx_params[i]->ID != data.ID) continue;
 		board_param_t* param = rx_params[i];
-		param->ival = data.ival;
 		param->timestamp = HAL_GetTick();
 		param->stale = false;
-		param->has_change = true;
+		if (param->ival == data.ival) {
+			param->has_change = false;
+		} else {
+			param->ival = data.ival;
+			param->has_change = true;
+			param->change_timestamp = HAL_GetTick();
+		}
 	}
 }

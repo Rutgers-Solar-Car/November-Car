@@ -1,3 +1,4 @@
 ../Core/Src/board_specific_params.c:10:16:get_params	1
 ../Core/Src/board_specific_params.c:16:13:impl_param_handler	4
-../Core/Src/board_specific_params.c:34:6:param_handler	3
+../Core/Src/board_specific_params.c:36:6:param_handler	3
+../Core/Src/board_specific_params.c:46:6:state_recalculate	2

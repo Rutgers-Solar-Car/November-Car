@@ -19,6 +19,14 @@ static void impl_param_handler(board_param_t* param) {
 		HAL_GPIO_WritePin(CON_BAT_G_GPIO_Port, CON_BAT_G_Pin, param->bval);
 	break;
 	case CON_MOTOR_ID:
+		if (!hvbps_parameters[Con_Batt].bval) {
+			HAL_GPIO_WritePin(CON_SC_G_GPIO_Port, CON_SC_G_Pin, 0);
+			return;
+		}
+		if (hvbps_parameters[Con_Batt].change_timestamp + 500 > HAL_GetTick()) {
+			HAL_GPIO_WritePin(CON_SC_G_GPIO_Port, CON_SC_G_Pin, 0);
+			return;
+		}
 		HAL_GPIO_WritePin(CON_SC_G_GPIO_Port, CON_SC_G_Pin, param->bval);
 	break;
 
@@ -35,6 +43,12 @@ void param_handler() {
 		}
 		impl_param_handler(&hvbps_parameters[i]);
 		hvbps_parameters[i].has_change = false;
+	}
+}
+
+void state_recalculate() {
+	for (int i = 0; i < NUM_PARAMS; i++) {
+		impl_param_handler(&hvbps_parameters[i]);
 	}
 }
 

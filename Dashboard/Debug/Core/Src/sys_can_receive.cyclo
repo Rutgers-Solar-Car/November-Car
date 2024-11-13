@@ -1,2 +1,2 @@
 ../Core/Src/sys_can_receive.c:12:6:can_rx_init	3
-../Core/Src/sys_can_receive.c:24:6:can_receive_message	5
+../Core/Src/sys_can_receive.c:24:6:can_receive_message	6

@@ -22,6 +22,8 @@ static void impl_param_handler(board_param_t* param) {
 
 	case CON_BATT_ID:
 	case CON_MOTOR_ID:
+		mainboard_parameters[Con_Batt].bval = !HAL_GPIO_ReadPin(SW_CON_BATT_GPIO_Port, SW_CON_BATT_Pin);
+		mainboard_parameters[Con_Motor].bval = !HAL_GPIO_ReadPin(SW_CON_MOT_GPIO_Port, SW_CON_MOT_Pin);
 		param->to_send = true;
 	break;
 
@@ -38,6 +40,12 @@ void param_handler() {
 		}
 		impl_param_handler(&mainboard_parameters[i]);
 		mainboard_parameters[i].has_change = false;
+	}
+}
+
+void state_recalculate(){
+	for (int i = 0; i < NUM_PARAMS; i++) {
+		impl_param_handler(&mainboard_parameters[i]);
 	}
 }
 

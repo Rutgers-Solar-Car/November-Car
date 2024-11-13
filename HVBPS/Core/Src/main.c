@@ -127,6 +127,7 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 	can_incremental_update();
+	state_recalculate();
 //	  check_staleness(&hvbps_params, NUM_PARAMS);
   }
   /* USER CODE END 3 */

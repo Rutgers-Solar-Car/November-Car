@@ -16,10 +16,12 @@ board_param_t* get_params();
 
 void param_handler();
 
+void state_recalculate();
+
 enum {
 	Con_Batt = 0,
 	Con_Motor = 1,
-	Dummy_Param
+	Dummy_Param = 2
 };
 
 #endif
