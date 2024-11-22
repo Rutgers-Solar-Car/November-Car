@@ -72,7 +72,10 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan) {
 
 void HAL_GPIO_EXTI_Callback(uint16_t pin) {
 
+}
 
+void bms_parameter_handler() {
+	// get bms info, update some stuff, you pick up what I am putting down
 }
 /* USER CODE END 0 */
 
@@ -129,6 +132,8 @@ int main(void)
 	can_incremental_update();
 	state_recalculate();
 //	  check_staleness(&hvbps_params, NUM_PARAMS);
+	bms_parameter_update();
+
   }
   /* USER CODE END 3 */
 }

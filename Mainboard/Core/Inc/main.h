@@ -64,15 +64,15 @@ void Error_Handler(void);
 #define LED_CAN_GPIO_Port GPIOF
 #define LED_BOARD_Pin GPIO_PIN_9
 #define LED_BOARD_GPIO_Port GPIOF
-#define BTN_2_Pin GPIO_PIN_10
-#define BTN_2_GPIO_Port GPIOF
-#define BTN_2_EXTI_IRQn EXTI15_10_IRQn
 #define SW_CON_MOT_Pin GPIO_PIN_12
 #define SW_CON_MOT_GPIO_Port GPIOF
 #define SW_CON_MOT_EXTI_IRQn EXTI15_10_IRQn
 #define SW_CON_BATT_Pin GPIO_PIN_8
 #define SW_CON_BATT_GPIO_Port GPIOE
 #define SW_CON_BATT_EXTI_IRQn EXTI9_5_IRQn
+#define MOT_RPM_Pin GPIO_PIN_10
+#define MOT_RPM_GPIO_Port GPIOG
+#define MOT_RPM_EXTI_IRQn EXTI15_10_IRQn
 
 /* USER CODE BEGIN Private defines */
 
