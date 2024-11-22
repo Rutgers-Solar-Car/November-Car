@@ -132,7 +132,7 @@ int main(void)
 	can_incremental_update();
 	state_recalculate();
 //	  check_staleness(&hvbps_params, NUM_PARAMS);
-	bms_parameter_update();
+	//bms_parameter_update();
 
   }
   /* USER CODE END 3 */

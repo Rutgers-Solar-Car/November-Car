@@ -1,6 +1,6 @@
-19:39:01 **** Incremental Build of configuration Debug for project HVBPS ****
+17:36:29 **** Incremental Build of configuration Debug for project HVBPS ****
 make -j22 all 
-arm-none-eabi-gcc "../Core/Src/board_specific_params.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/board_specific_params.d" -MT"Core/Src/board_specific_params.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/board_specific_params.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc -o "HVBPS.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\corre\coding\November-Car-2\HVBPS\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="HVBPS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: HVBPS.elf
  
@@ -13,5 +13,5 @@ Finished building: default.size.stdout
 Finished building: HVBPS.list
  
 
-19:39:02 Build Finished. 0 errors, 0 warnings. (took 1s.30ms)
+17:36:31 Build Finished. 0 errors, 0 warnings. (took 1s.443ms)
 
