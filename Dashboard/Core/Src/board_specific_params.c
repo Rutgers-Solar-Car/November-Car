@@ -86,6 +86,7 @@ static void impl_param_handler(board_param_t* param) {
 		// no op
 	break;
 	}
+
 }
 
 void param_handler() {

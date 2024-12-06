@@ -98,7 +98,6 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan) {
   */
 int main(void)
 {
-
   /* USER CODE BEGIN 1 */
   dashboard_parameters = get_params();
   /* USER CODE END 1 */

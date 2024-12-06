@@ -4,7 +4,7 @@
 #include <stdbool.h>
 #include <stdint.h>
 
-typedef union {
+typedef union can_data{
 	struct {
 		uint16_t ID;
 		union {

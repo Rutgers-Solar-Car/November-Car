@@ -39,4 +39,5 @@ void can_receive_message() {
 			param->change_timestamp = HAL_GetTick();
 		}
 	}
+
 }
