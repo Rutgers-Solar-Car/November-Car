@@ -131,6 +131,10 @@ int main(void)
   can_tx_init(&hcan1, dashboard_params);
   can_rx_init(&hcan1, dashboard_params);
   HAL_CAN_ActivateNotification(&hcan1, CAN_IT_RX_FIFO0_MSG_PENDING);
+
+  int size = 5;
+  int arr[size];
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
