@@ -1,2 +1,0 @@
-../Core/Src/board_params.c:6:12:convert_message	32	static
-../Core/Src/board_params.c:11:6:check_staleness	24	static

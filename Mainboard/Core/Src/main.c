@@ -21,10 +21,6 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "can.h"
-#include "sys_can_transmit.h"
-#include "sys_can_receive.h"
-#include "board_specific_params.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -49,8 +45,6 @@ TIM_HandleTypeDef htim2;
 
 /* USER CODE BEGIN PV */
 
-board_param_t* dashboard_params;
-
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -66,27 +60,11 @@ static void MX_TIM2_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan) {
-	can_receive_message();
-	param_handler();
+
 }
 
 void HAL_GPIO_EXTI_Callback(uint16_t pin) {
-	switch (pin) {
 
-	case SW_CON_BATT_Pin:
-		dashboard_params[Con_Batt].bval = !HAL_GPIO_ReadPin(SW_CON_BATT_GPIO_Port, SW_CON_BATT_Pin);
-		dashboard_params[Con_Batt].has_change = true;
-	break;
-
-	case SW_CON_MOT_Pin:
-		dashboard_params[Con_Motor].bval = !HAL_GPIO_ReadPin(SW_CON_MOT_GPIO_Port, SW_CON_MOT_Pin);
-		dashboard_params[Con_Motor].has_change = true;
-	break;
-	default:
-		//no-op
-	break;
-	}
-	param_handler();
 }
 /* USER CODE END 0 */
 
@@ -98,8 +76,6 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-
-  dashboard_params = get_params();
 
   /* USER CODE END 1 */
 
@@ -128,12 +104,7 @@ int main(void)
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
   HAL_CAN_Start(&hcan1);
-  can_tx_init(&hcan1, dashboard_params);
-  can_rx_init(&hcan1, dashboard_params);
   HAL_CAN_ActivateNotification(&hcan1, CAN_IT_RX_FIFO0_MSG_PENDING);
-
-  int size = 5;
-  int arr[size];
 
   /* USER CODE END 2 */
 
@@ -144,8 +115,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    can_incremental_update();
-    state_recalculate();
+
   }
   /* USER CODE END 3 */
 }
