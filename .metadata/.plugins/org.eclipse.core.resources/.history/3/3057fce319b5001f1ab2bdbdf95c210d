@@ -1,0 +1,13 @@
+/*
+ * subscribe.cpp
+ *
+ *  Created on: Dec 7, 2024
+ *      Author: Nathaniel Correa
+ */
+
+#include "linked_list.h"
+#include "subscriber.h"
+
+node_t* head;
+
+void subscribe()

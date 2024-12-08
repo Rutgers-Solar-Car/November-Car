@@ -1,0 +1,16 @@
+/*
+ * subscriber.h
+ *
+ *  Created on: Dec 7, 2024
+ *      Author: Nathaniel Correa
+ */
+
+#ifndef INC_SUBSCRIBER_H_
+#define INC_SUBSCRIBER_H_
+
+#include <stdint.h>
+#include "linked_list.h"
+
+int subscribe(node_t* node);
+
+#endif /* INC_SUBSCRIBER_H_ */

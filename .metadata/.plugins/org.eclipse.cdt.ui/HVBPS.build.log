@@ -1,4 +1,4 @@
-22:32:38 **** Incremental Build of configuration Debug for project HVBPS ****
+23:57:56 **** Incremental Build of configuration Debug for project HVBPS ****
 make -j22 all 
 arm-none-eabi-size  HVBPS.elf 
    text	   data	    bss	    dec	    hex	filename
@@ -6,5 +6,5 @@ arm-none-eabi-size  HVBPS.elf
 Finished building: default.size.stdout
  
 
-22:32:38 Build Finished. 0 errors, 0 warnings. (took 253ms)
+23:57:57 Build Finished. 0 errors, 0 warnings. (took 248ms)
 
