@@ -20,7 +20,16 @@ typedef struct node {
 		bool bval;
 	};
 
+	// metadata below
+	union {
+		int _l_ival;
+		float _l_fval;
+		bool _l_bval;
+	};
+
 	struct node* next;
+
+	char _notify;
 
 } node_t;
 

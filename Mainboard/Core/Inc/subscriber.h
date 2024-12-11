@@ -13,6 +13,6 @@
 
 void subscribe(node_t* node);
 
-void update(uint32_t param_id, void* val);
+int update(uint32_t param_id, void* val);
 
 #endif /* INC_SUBSCRIBER_H_ */
