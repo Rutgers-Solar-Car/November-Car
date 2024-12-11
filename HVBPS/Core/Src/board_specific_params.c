@@ -16,9 +16,18 @@ board_param_t* get_params() {
 static void impl_param_handler(board_param_t* param) {
 	switch (param->ID) {
 	case CON_BATT_ID:
-		HAL_GPIO_WritePin(CON_BAT_G_GPIO_Port, CON_BAT_G_Pin, param->bval);
+		char set = param->bval;
+		if (HAL_GPIO_ReadPin(BMS_DCH_EN_GPIO_Port, BMS_DCH_EN_Pin)) {
+			set = false;
+		}
+		HAL_GPIO_WritePin(CON_BAT_G_GPIO_Port, CON_BAT_G_Pin, set);
 	break;
 	case CON_MOTOR_ID:
+		if (HAL_GPIO_ReadPin(BMS_DCH_EN_GPIO_Port, BMS_DCH_EN_Pin)) {
+			HAL_GPIO_WritePin(CON_SC_G_GPIO_Port, CON_SC_G_Pin, 0);
+			return;
+		}
+
 		if (!hvbps_parameters[Con_Batt].bval) {
 			HAL_GPIO_WritePin(CON_SC_G_GPIO_Port, CON_SC_G_Pin, 0);
 			return;

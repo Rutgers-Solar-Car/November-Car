@@ -6,5 +6,5 @@
 ../Core/Src/main.c:192:13:MX_CAN1_Init	2
 ../Core/Src/main.c:242:13:MX_TIM2_Init	4
 ../Core/Src/main.c:287:13:MX_GPIO_Init	1
-../Core/Src/main.c:346:6:MPU_Config	1
-../Core/Src/main.c:377:6:Error_Handler	1
+../Core/Src/main.c:352:6:MPU_Config	1
+../Core/Src/main.c:383:6:Error_Handler	1

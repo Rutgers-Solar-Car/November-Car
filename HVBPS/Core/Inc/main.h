@@ -71,6 +71,8 @@ void Error_Handler(void);
 #define BTN_2_Pin GPIO_PIN_10
 #define BTN_2_GPIO_Port GPIOF
 #define BTN_2_EXTI_IRQn EXTI15_10_IRQn
+#define BMS_DCH_EN_Pin GPIO_PIN_5
+#define BMS_DCH_EN_GPIO_Port GPIOC
 
 /* USER CODE BEGIN Private defines */
 
