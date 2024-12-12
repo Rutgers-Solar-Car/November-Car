@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;Mainboard/Core/Src/subscribe.cpp&apos; to &apos;subscribe.c&apos;" description="Rename resource &apos;subscribe.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/subscribe.cpp" name="subscribe.c" stamp="1733630921375" updateReferences="true"/>
-</session>

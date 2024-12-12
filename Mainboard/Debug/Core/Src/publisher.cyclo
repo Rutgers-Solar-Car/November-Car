@@ -1,4 +1,0 @@
-../Core/Src/publisher.c:23:6:publish	1
-../Core/Src/publisher.c:29:6:notify_all	2
-../Core/Src/publisher.c:37:5:notify	2
-../Core/Src/publisher.c:44:6:notify_loop	4
