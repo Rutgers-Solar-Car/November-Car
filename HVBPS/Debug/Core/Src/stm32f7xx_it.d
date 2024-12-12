@@ -28,9 +28,7 @@ Core/Src/stm32f7xx_it.o: ../Core/Src/stm32f7xx_it.c ../Core/Inc/main.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr_ex.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h \
- ../Core/Inc/stm32f7xx_it.h ../Core/Inc/sys_can_receive.h \
- ../Core/Inc/can.h ../Core/Inc/main.h ../Core/Inc/board_params.h \
- ../Core/Inc/sys_can_transmit.h
+ ../Core/Inc/stm32f7xx_it.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:
 ../Core/Inc/stm32f7xx_hal_conf.h:
@@ -62,8 +60,3 @@ Core/Src/stm32f7xx_it.o: ../Core/Src/stm32f7xx_it.c ../Core/Inc/main.h \
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h:
 ../Core/Inc/stm32f7xx_it.h:
-../Core/Inc/sys_can_receive.h:
-../Core/Inc/can.h:
-../Core/Inc/main.h:
-../Core/Inc/board_params.h:
-../Core/Inc/sys_can_transmit.h:

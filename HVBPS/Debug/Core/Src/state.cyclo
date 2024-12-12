@@ -1,0 +1,2 @@
+../Core/Inc/state.h:22:6:init_state	1
+../Core/Src/state.c:13:6:state_recalculate	9

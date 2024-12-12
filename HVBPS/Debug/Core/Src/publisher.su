@@ -1,0 +1,4 @@
+../Core/Src/publisher.c:23:6:publish	16	static
+../Core/Src/publisher.c:29:6:notify_all	16	static
+../Core/Src/publisher.c:37:5:notify	24	static
+../Core/Src/publisher.c:44:6:notify_loop	32	static

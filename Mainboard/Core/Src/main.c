@@ -21,6 +21,9 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "publisher.h"
+#include "subscriber.h"
+#include "state.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -45,6 +48,8 @@ TIM_HandleTypeDef htim2;
 
 /* USER CODE BEGIN PV */
 
+uint32_t TxMailbox;
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -60,7 +65,16 @@ static void MX_TIM2_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan) {
-
+	CAN_RxHeaderTypeDef header;
+	union {
+		struct {
+			uint16_t param_id;
+			int data;
+		};
+		uint8_t convert[8];
+	} conversion;
+	HAL_CAN_GetRxMessage(&hcan1, CAN_RX_FIFO0, &header, conversion.convert);
+	update(conversion.param_id, &conversion.data);
 }
 
 void HAL_GPIO_EXTI_Callback(uint16_t pin) {
@@ -106,6 +120,23 @@ int main(void)
   HAL_CAN_Start(&hcan1);
   HAL_CAN_ActivateNotification(&hcan1, CAN_IT_RX_FIFO0_MSG_PENDING);
 
+  mainboard_state_t state;
+  init_state(&state);
+  mainboard_state_t last_state;
+  last_state = state;
+
+  node_t motor_rpm_node = { .param_id = 101, .fval = & state.motor_rpm };
+  publish(&motor_rpm_node);
+  node_t motor_power_node = { .param_id = 102, .bval = & state.motor_power };
+  publish(&motor_power_node);
+  node_t motor_forward_node = { .param_id = 103, .bval = & state.motor_forward };
+  publish(&motor_forward_node);
+  node_t motor_contactor_requested_node = { .param_id = 104, .bval = & state.motor_contactor_requested };
+  publish(&motor_contactor_requested_node);
+  node_t main_contactor_requested_node = { .param_id = 105, .bval = & state.main_power_requested };
+  publish(&main_contactor_requested_node);
+
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -115,6 +146,8 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+	notify_loop(&hcan1, &TxMailbox);
+	state_recalculate(&state, &last_state);
 
   }
   /* USER CODE END 3 */

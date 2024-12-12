@@ -21,10 +21,9 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "can.h"
-#include "sys_can_transmit.h"
-#include "sys_can_receive.h"
-#include "board_specific_params.h"
+#include "subscriber.h"
+#include "publisher.h"
+#include "state.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -49,7 +48,7 @@ TIM_HandleTypeDef htim2;
 
 /* USER CODE BEGIN PV */
 
-board_param_t* hvbps_params;
+uint32_t TxMailbox;
 
 /* USER CODE END PV */
 
@@ -66,8 +65,16 @@ static void MX_TIM2_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan) {
-	can_receive_message();
-	param_handler();
+	CAN_RxHeaderTypeDef header;
+	union {
+		struct {
+			uint16_t param_id;
+			int data;
+		};
+		uint8_t convert[8];
+	} conversion;
+	HAL_CAN_GetRxMessage(&hcan1, CAN_RX_FIFO0, &header, conversion.convert);
+	update(conversion.param_id, &conversion.data);
 }
 
 void HAL_GPIO_EXTI_Callback(uint16_t pin) {
@@ -88,7 +95,6 @@ int main(void)
 
   /* USER CODE BEGIN 1 */
 
-  hvbps_params = get_params();
 
   /* USER CODE END 1 */
 
@@ -117,9 +123,17 @@ int main(void)
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
   HAL_CAN_Start(&hcan1);
-  can_tx_init(&hcan1, hvbps_params);
-  can_rx_init(&hcan1, hvbps_params);
   HAL_CAN_ActivateNotification(&hcan1, CAN_IT_RX_FIFO0_MSG_PENDING);
+
+  hvbps_state_t state;
+  init_state(&state);
+  hvbps_state_t last = state;
+
+  node_t motor_power_requested_node = { .param_id = 104, .bval = & state.motor_power_requested };
+  subscribe(&motor_power_requested_node);
+  node_t main_power_requested_node = {.param_id = 105, .bval = & state.main_power_requested };
+  subscribe(&main_power_requested_node);
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -129,10 +143,8 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	can_incremental_update();
-	state_recalculate();
-//	  check_staleness(&hvbps_params, NUM_PARAMS);
-	//bms_parameter_update();
+    notify_loop(&hcan1, &TxMailbox);
+    state_recalculate(&state, &last);
 
   }
   /* USER CODE END 3 */
@@ -328,6 +340,12 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Mode = GPIO_MODE_IT_FALLING;
   GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(BTN_2_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : BMS_DCH_EN_Pin */
+  GPIO_InitStruct.Pin = BMS_DCH_EN_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
+  HAL_GPIO_Init(BMS_DCH_EN_GPIO_Port, &GPIO_InitStruct);
 
   /* EXTI interrupt init*/
   HAL_NVIC_SetPriority(EXTI15_10_IRQn, 0, 0);
