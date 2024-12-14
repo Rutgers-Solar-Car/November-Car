@@ -7,17 +7,20 @@
 C_SRCS += \
 ../Drivers/UI/fonts/ui_font_BarlowBold120.c \
 ../Drivers/UI/fonts/ui_font_BarlowBold32.c \
-../Drivers/UI/fonts/ui_font_BarlowMedium20.c 
+../Drivers/UI/fonts/ui_font_BarlowMedium20.c \
+../Drivers/UI/fonts/ui_font_mono_font.c 
 
 OBJS += \
 ./Drivers/UI/fonts/ui_font_BarlowBold120.o \
 ./Drivers/UI/fonts/ui_font_BarlowBold32.o \
-./Drivers/UI/fonts/ui_font_BarlowMedium20.o 
+./Drivers/UI/fonts/ui_font_BarlowMedium20.o \
+./Drivers/UI/fonts/ui_font_mono_font.o 
 
 C_DEPS += \
 ./Drivers/UI/fonts/ui_font_BarlowBold120.d \
 ./Drivers/UI/fonts/ui_font_BarlowBold32.d \
-./Drivers/UI/fonts/ui_font_BarlowMedium20.d 
+./Drivers/UI/fonts/ui_font_BarlowMedium20.d \
+./Drivers/UI/fonts/ui_font_mono_font.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -27,7 +30,7 @@ Drivers/UI/fonts/%.o Drivers/UI/fonts/%.su Drivers/UI/fonts/%.cyclo: ../Drivers/
 clean: clean-Drivers-2f-UI-2f-fonts
 
 clean-Drivers-2f-UI-2f-fonts:
-	-$(RM) ./Drivers/UI/fonts/ui_font_BarlowBold120.cyclo ./Drivers/UI/fonts/ui_font_BarlowBold120.d ./Drivers/UI/fonts/ui_font_BarlowBold120.o ./Drivers/UI/fonts/ui_font_BarlowBold120.su ./Drivers/UI/fonts/ui_font_BarlowBold32.cyclo ./Drivers/UI/fonts/ui_font_BarlowBold32.d ./Drivers/UI/fonts/ui_font_BarlowBold32.o ./Drivers/UI/fonts/ui_font_BarlowBold32.su ./Drivers/UI/fonts/ui_font_BarlowMedium20.cyclo ./Drivers/UI/fonts/ui_font_BarlowMedium20.d ./Drivers/UI/fonts/ui_font_BarlowMedium20.o ./Drivers/UI/fonts/ui_font_BarlowMedium20.su
+	-$(RM) ./Drivers/UI/fonts/ui_font_BarlowBold120.cyclo ./Drivers/UI/fonts/ui_font_BarlowBold120.d ./Drivers/UI/fonts/ui_font_BarlowBold120.o ./Drivers/UI/fonts/ui_font_BarlowBold120.su ./Drivers/UI/fonts/ui_font_BarlowBold32.cyclo ./Drivers/UI/fonts/ui_font_BarlowBold32.d ./Drivers/UI/fonts/ui_font_BarlowBold32.o ./Drivers/UI/fonts/ui_font_BarlowBold32.su ./Drivers/UI/fonts/ui_font_BarlowMedium20.cyclo ./Drivers/UI/fonts/ui_font_BarlowMedium20.d ./Drivers/UI/fonts/ui_font_BarlowMedium20.o ./Drivers/UI/fonts/ui_font_BarlowMedium20.su ./Drivers/UI/fonts/ui_font_mono_font.cyclo ./Drivers/UI/fonts/ui_font_mono_font.d ./Drivers/UI/fonts/ui_font_mono_font.o ./Drivers/UI/fonts/ui_font_mono_font.su
 
 .PHONY: clean-Drivers-2f-UI-2f-fonts
 

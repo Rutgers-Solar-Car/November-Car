@@ -35,6 +35,7 @@ void can_tx_init(CAN_HandleTypeDef* hcan, board_param_t* params) {
 
 void can_incremental_update() {
 	if (!ready) return;
+	send_can_message(tx_params[2]);
 	for (int i = 0; i < num_tx_params; i++) {
 		if (!tx_params[i]->to_send) continue;
 		if (send_can_message(tx_params[i]) == HAL_OK) {

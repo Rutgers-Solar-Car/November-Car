@@ -5,4 +5,4 @@ C:/Users/corre/coding/November-Car-2/Dashboard/Drivers/lvgl/src/hal/../draw/../m
 ../Drivers/UI/ui_theme_manager.c:70:21:ui_get_theme_value	1
 ../Drivers/UI/ui_theme_manager.c:75:18:_ui_style_value_convert	18
 ../Drivers/UI/ui_theme_manager.c:93:20:_ui_local_style_create	5
-../Drivers/UI/ui_theme_manager.c:118:37:_ui_local_style_property_setting_create	14
+../Drivers/UI/ui_theme_manager.c:121:37:_ui_local_style_property_setting_create	19

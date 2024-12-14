@@ -5,16 +5,19 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../Drivers/UI/screens/ui_Battery_Screen.c \
 ../Drivers/UI/screens/ui_Screen_Dark.c \
 ../Drivers/UI/screens/ui_Screen_Loading.c \
 ../Drivers/UI/screens/ui_Screen_Main.c 
 
 OBJS += \
+./Drivers/UI/screens/ui_Battery_Screen.o \
 ./Drivers/UI/screens/ui_Screen_Dark.o \
 ./Drivers/UI/screens/ui_Screen_Loading.o \
 ./Drivers/UI/screens/ui_Screen_Main.o 
 
 C_DEPS += \
+./Drivers/UI/screens/ui_Battery_Screen.d \
 ./Drivers/UI/screens/ui_Screen_Dark.d \
 ./Drivers/UI/screens/ui_Screen_Loading.d \
 ./Drivers/UI/screens/ui_Screen_Main.d 
@@ -27,7 +30,7 @@ Drivers/UI/screens/%.o Drivers/UI/screens/%.su Drivers/UI/screens/%.cyclo: ../Dr
 clean: clean-Drivers-2f-UI-2f-screens
 
 clean-Drivers-2f-UI-2f-screens:
-	-$(RM) ./Drivers/UI/screens/ui_Screen_Dark.cyclo ./Drivers/UI/screens/ui_Screen_Dark.d ./Drivers/UI/screens/ui_Screen_Dark.o ./Drivers/UI/screens/ui_Screen_Dark.su ./Drivers/UI/screens/ui_Screen_Loading.cyclo ./Drivers/UI/screens/ui_Screen_Loading.d ./Drivers/UI/screens/ui_Screen_Loading.o ./Drivers/UI/screens/ui_Screen_Loading.su ./Drivers/UI/screens/ui_Screen_Main.cyclo ./Drivers/UI/screens/ui_Screen_Main.d ./Drivers/UI/screens/ui_Screen_Main.o ./Drivers/UI/screens/ui_Screen_Main.su
+	-$(RM) ./Drivers/UI/screens/ui_Battery_Screen.cyclo ./Drivers/UI/screens/ui_Battery_Screen.d ./Drivers/UI/screens/ui_Battery_Screen.o ./Drivers/UI/screens/ui_Battery_Screen.su ./Drivers/UI/screens/ui_Screen_Dark.cyclo ./Drivers/UI/screens/ui_Screen_Dark.d ./Drivers/UI/screens/ui_Screen_Dark.o ./Drivers/UI/screens/ui_Screen_Dark.su ./Drivers/UI/screens/ui_Screen_Loading.cyclo ./Drivers/UI/screens/ui_Screen_Loading.d ./Drivers/UI/screens/ui_Screen_Loading.o ./Drivers/UI/screens/ui_Screen_Loading.su ./Drivers/UI/screens/ui_Screen_Main.cyclo ./Drivers/UI/screens/ui_Screen_Main.d ./Drivers/UI/screens/ui_Screen_Main.o ./Drivers/UI/screens/ui_Screen_Main.su
 
 .PHONY: clean-Drivers-2f-UI-2f-screens
 

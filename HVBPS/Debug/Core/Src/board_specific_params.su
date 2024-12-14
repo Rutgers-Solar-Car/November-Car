@@ -1,4 +1,4 @@
 ../Core/Src/board_specific_params.c:10:16:get_params	4	static
 ../Core/Src/board_specific_params.c:16:13:impl_param_handler	24	static
-../Core/Src/board_specific_params.c:39:6:param_handler	16	static
-../Core/Src/board_specific_params.c:49:6:state_recalculate	16	static
+../Core/Src/board_specific_params.c:51:6:param_handler	16	static
+../Core/Src/board_specific_params.c:61:6:state_recalculate	16	static

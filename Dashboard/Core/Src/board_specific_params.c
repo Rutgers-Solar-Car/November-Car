@@ -41,9 +41,10 @@ static void impl_param_handler(board_param_t* param) {
 		HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
 		return;
 	break;
-	case MOTOR_RPM_ID:
-		sprintf(buff, "%d", (int)param->fval);
-		lv_label_set_text(ui_SpeedLabel, buff);
+	case 4:
+		char thing[10];
+		sprintf(thing, "%d", (int)param->fval);
+		lv_label_set_text(ui_SpeedLabel, thing);
 		return;
 	break;
 	case THERMISTOR_1_ID:
@@ -93,6 +94,7 @@ void param_handler() {
 		if (!dashboard_parameters[i].has_change) {
 			continue;
 		}
+
 		impl_param_handler(&dashboard_parameters[i]);
 		dashboard_parameters[i].has_change = false;
 	}
@@ -127,12 +129,13 @@ static board_param_t dashboard_parameters[20] = {
 		},
 		// Motor RPM
 		{
-			.ID = 101,
+			.ID = 4,
 			.ival = 0,
 			.check_stale = true,
 			.timestamp = 0,
 			.type = TO_RECEIVE,
 			.to_send = false,
+			.has_change = false
 		},
 		// Thermistor 1
 		{

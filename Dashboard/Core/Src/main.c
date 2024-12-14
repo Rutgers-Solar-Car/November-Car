@@ -67,6 +67,9 @@ UART_HandleTypeDef huart3;
 
 board_param_t* dashboard_parameters;
 
+uint16_t id;
+float fval;
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -87,8 +90,157 @@ static void MX_TIM2_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan) {
-	can_receive_message();
-	param_handler();
+
+	CAN_RxHeaderTypeDef header;
+	can_data_t data;
+	HAL_CAN_GetRxMessage(&hcan1, CAN_RX_FIFO0, &header, data.data);
+
+	id = data.ID;
+	fval = data.fval;
+
+	if (data.ID == 4) {
+		char buff[5];
+		sprintf(buff, "%d", (int)data.fval);
+		lv_label_set_text(ui_SpeedLabel, buff);
+	}
+
+//	can_receive_message();
+//	param_handler();
+
+	return;
+
+	//CAN_RxHeaderTypeDef header;
+//	union {
+//		struct {
+//			uint8_t id;
+//			uint16_t inst_voltage;
+//			uint16_t inst_resist;
+//			uint16_t open_voltage;
+//		};
+//
+//		struct {
+//			uint32_t ID;
+//			float fval;
+//
+//		};
+//		uint8_t data[8];
+//	};
+
+
+//	if (data.ID == 4) {
+//		char buff[5];
+//		sprintf(buff, "%d", (int)data.fval);
+//		lv_label_set_text(ui_SpeedLabel, buff);
+//	}
+//
+//	if (header.StdId == 0x37) {
+//		char buff[20];
+//
+//			sprintf(buff, "P%2d %d mV", data.id, data.inst_voltage);
+//			switch(data.id) {
+//			case 1:
+//				lv_label_set_text(ui_Pack_1, buff);
+//			break;
+//			case 2:
+//				lv_label_set_text(ui_Pack_25, buff);
+//			break;
+//			case 3:
+//				lv_label_set_text(ui_Pack_3, buff);
+//			break;
+//			case 4:
+//				lv_label_set_text(ui_Pack_, buff);
+//			break;
+//			case 5:
+//				lv_label_set_text(ui_Pack_5, buff);
+//			break;
+//			case 6:
+//				lv_label_set_text(ui_Pack_6, buff);
+//			break;
+//			case 7:
+//				lv_label_set_text(ui_Pack_7, buff);
+//			break;
+//			case 8:
+//				lv_label_set_text(ui_Pack_8, buff);
+//			break;
+//			case 9:
+//				lv_label_set_text(ui_Pack_9, buff);
+//			break;
+//			case 10:
+//				lv_label_set_text(ui_Pack_10, buff);
+//			break;
+//			case 11:
+//				lv_label_set_text(ui_Pack_11, buff);
+//				break;
+//			case 12:
+//				lv_label_set_text(ui_Pack_12, buff);
+//			break;
+//			case 13:
+//				lv_label_set_text(ui_Pack_13, buff);
+//				break;
+//			case 14:
+//				lv_label_set_text(ui_Pack_14, buff);
+//				break;
+//			case 15:
+//				lv_label_set_text(ui_Pack_15, buff);
+//				break;
+//			case 16:
+//				lv_label_set_text(ui_Pack_16, buff);
+//				break;
+//			case 17:
+//				lv_label_set_text(ui_Pack_17, buff);
+//				break;
+//			case 18:
+//				lv_label_set_text(ui_Pack_18, buff);
+//				break;
+//			case 19:
+//				lv_label_set_text(ui_Pack_19, buff);
+//				break;
+//			case 20:
+//				lv_label_set_text(ui_Pack_20, buff);
+//				break;
+//			case 21:
+//				lv_label_set_text(ui_Pack_21, buff);
+//				break;
+//			case 22:
+//				lv_label_set_text(ui_Pack_22, buff);
+//				break;
+//			case 23:
+//				lv_label_set_text(ui_Pack_23, buff);
+//				break;
+//			case 24:
+//				lv_label_set_text(ui_Pack_24, buff);
+//				break;
+//			}
+//
+//	}
+
+
+
+}
+
+int i = 0;
+
+void HAL_GPIO_EXTI_Callback(uint16_t pin) {
+
+	switch(pin) {
+
+	case SW_SCR_Pin:
+
+		i++;
+		if (i % 2 == 0) {
+			_ui_screen_change(&ui_Battery_Screen, LV_SCR_LOAD_ANIM_FADE_ON, 500, 0, ui_Battery_Screen_screen_init);
+		} else {
+			_ui_screen_change(&ui_Screen_Main, LV_SCR_LOAD_ANIM_FADE_ON, 500, 0, ui_Screen_Main_screen_init);
+		}
+
+		break;
+
+	default:
+		return;
+		break;
+
+	}
+
 }
 /* USER CODE END 0 */
 
@@ -152,7 +304,9 @@ int main(void)
   _ui_screen_change(&ui_Screen_Dark, LV_SCR_LOAD_ANIM_FADE_ON, 500, 0, ui_Screen_Dark_screen_init);
   _ui_screen_change(&ui_Screen_Loading, LV_SCR_LOAD_ANIM_FADE_ON, 500, 1000, ui_Screen_Loading_screen_init);
   _ui_screen_change(&ui_Screen_Main, LV_SCR_LOAD_ANIM_FADE_ON, 100, 5000, ui_Screen_Main_screen_init);
+//  _ui_screen_change(&ui_Battery_Screen, LV_SCR_LOAD_ANIM_FADE_ON, 500, 0, ui_Battery_Screen_screen_init);
 
+  lv_label_set_text(ui_SpeedLabel, "XX");
 
   /* USER CODE END 2 */
 
@@ -166,6 +320,7 @@ int main(void)
 
 	lv_task_handler();  // to be added
     can_incremental_update();
+
   }
   /* USER CODE END 3 */
 }
@@ -643,6 +798,16 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(USB_VBUS_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : SW_SCR_Pin */
+  GPIO_InitStruct.Pin = SW_SCR_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(SW_SCR_GPIO_Port, &GPIO_InitStruct);
+
+  /* EXTI interrupt init*/
+  HAL_NVIC_SetPriority(EXTI9_5_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(EXTI9_5_IRQn);
 
 /* USER CODE BEGIN MX_GPIO_Init_2 */
 /* USER CODE END MX_GPIO_Init_2 */
